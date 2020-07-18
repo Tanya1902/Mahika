@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+
+        @font-face {
+            font-family: cheer;
+            src: url('Cheeronsta Regular.otf');
+        }
+
+        .carousel-inner {
+            width: 1520px;
+            height: 700px;
+        }
+
+        .carousel-item {
+            width: 1520px;
+            height: 700px;
+        }
+
+        .btn {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #ffad33;
+            color: white;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .btn:hover {
+                background-color: #ff9933;
+                color: white;
+            }
+
+        .btn2 {
+            position: absolute;
+            background-color: MediumSeaGreen;
+            border-radius: 5px;
+            color: white;
+            font-size: 10px;
+            top: 1.5%;
+            left: 72%;
+            width: 100px;
+            border: none;
+            height: 32px;
+            font-size: 20px;
+            font-family: Comic Sans MS;
+            text-align: center;
+        }
+
+
+            .btn2:hover {
+                background-color: #39ac6d;
+            }
+
+
+        .top-right {
+            position: absolute;
+            font-family: Comic Sans MS;
+            font-size: 105%;
+            top: 60px;
+            right: 16px;
+            color: white;
+            background-color: #7b1e5e;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .divOne {
+            height: 80px;
+            border-bottom: 50px solid white;
+            text-align: left;
+            background-color: #7b1e5e;
+            padding: 26px 40px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: #b8b894 5px 5px 10px;
+        }
+
+
+        @font-face {
+            font-family: happy;
+            src: url('My Happy Ending - TTF.TTF');
+        }
+
+
+        #letters {
+            position: absolute;
+            font-family: cheer;
+            font-size: 15pt;
+            top: 14px;
+            left: 90px;
+            color: white;
+        }
+
+        #text {
+            position: absolute;
+            left: 100px;
+            top: 180%;
+            font-family: Comic Sans MS;
+            font-size: 130%;
+            color: black;
+        }
+
+        .navbuttons {
+            position: absolute;
+            border-radius: 5px;
+            color: black;
+            border-bottom: 1px solid gray;
+            background-color: white;
+            font-size: 10px;
+            top: 8.5%;
+            left: 10%;
+            width: 130px;
+            border: none;
+            height: 34px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+            .navbuttons:current {
+                color: #ffa31a;
+            }
+
+        #search {
+            position: absolute;
+            top: 8.5%;
+            left: 80%;
+            float: right;
+            border: 1.5px solid #ffad33;
+            border-radius: 25px;
+            background: url() no-repeat scroll 7px 7px;
+            padding-left: 30px;
+            background-image: url("https://icon-library.com/images/search-icon-html/search-icon-html-6.jpg");
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            background-position: 2px 1px 2px;
+        }
+
+
+        .subnav {
+            background-color: white;
+            height: 6.5vh;
+        }
+
+        #whitebutton {
+            position: absolute;
+            top: 100px;
+            left: 2px;
+            background-color: white;
+            color: #7b1e5e;
+            font-size: 14px;
+            padding: 5px;
+            text-align: center;
+            width: 380px;
+            height: 45px;
+            border: none;
+            border-bottom: 1px solid grey;
+            box-shadow: grey 1px 2px 10px;
+        }
+
+            #whitebutton:current {
+                background-color: #ffc34d;
+                color: white;
+            }
+
+        .Blog{
+            height: 172vh;
+            background-color: floralwhite;
+            background: url('WorkFlow.png') top left no-repeat;
+            background-size: cover;
+        }
+
+        #shadow-text {
+            position: absolute;
+            height: 67vh;
+            width: 540px;
+            box-shadow: 2px 1px 5px 2px grey;
+            left: 200px;
+            top: 145vh;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .form {
+            height: 85vh;
+            width:1200px;
+            background: #e6f7ff;
+            border-radius: 10px;
+        }
+
+        .share {
+            background-color: white;
+            height: 37vh;
+        }
+
+        .contact {
+            height: 62vh;
+            background: url('Footer.png') left top no-repeat, #ac3973;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="divOne">
+        <button class="btn2">Letter</button>
+        <button class="btn2" style="left:82%">
+            Donate
+        </button>
+
+        <p id="letters">Mahika Mishra Foundation</p>
+        <img src="Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
+        <button class="navbuttons" style="left: 4%">HOME</button>
+        <button class="navbuttons" style="left: 10%">ABOUT US</button>
+        <button class="navbuttons" style="left: 17%">OUR WORK</button>
+        <button class="navbuttons" style="left: 25%">GET INVOLVED</button>
+        <button class="navbuttons" style="left: 35%">MEDIA CENTRE</button>
+        <button class="navbuttons" style="left: 43%">FAQ</button>
+        <button class="navbuttons" style="left: 49%">CONTACT US</button>
+        <input class="input-field"
+               type="text"
+               id="search"
+               placeholder="Search..">
+    </div>
+
+
+
+
+    <div class="subnav">
+
+        <button id="whitebutton" style="border-bottom-left-radius:10px;">News</button>
+        <button id="whitebutton" style="left:380px">Blog</button>
+        <button id="whitebutton" style="left:760px;border-bottom-right-radius:10px;">Gallery</button>
+        <button id="whitebutton" style="left:1140px;border-bottom-right-radius:10px;">Social Media</button>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="moving.gif" class="d-block w-100" alt="..." style="height:700px">
+                <p class="top-right">Letters Received-206</p>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="butterfly.gif" style="height:700px" class="d-block w-100" alt="...">
+                <p class="top-right">Letters Received-206</p>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://northstarstone.biz/wp-content/uploads/2013/04/11634-400-300.jpg" class="d-block w-100" alt="..." style="height:700px">
+                <p class="top-right">Letters Received-206</p>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" class="d-block w-100" alt="..." style="height:700px">
+                <p class="top-right">Letters Received-206</p>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" class="d-block w-100" alt="..." style="height:700px">
+                <p class="top-right">Letters Received-206</p>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+    <div class="Blog">
+        <div id="shadow-text" style="padding:10px;">
+            <img src="Dushyant 2.jpg" style="position:relative;top:20px;right:20px;float:right;width:100px;height:100px;border-radius:50%;" />
+            <h3 style="position:relative;left:10px;top:6vh;padding:10px;">Title Of Blog</h3>
+            <textarea style="position:relative;left:10px;top:6vh;border:none;" rows="13" cols="50">HELLOoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</textarea>
+        </div>
+
+        <div id="shadow-text" style="left:830px">
+            <img src="Dushyant 2.jpg" style="position:relative;top:20px;right:20px;float:right;width:100px;height:100px;border-radius:50%;" />
+            <h3 style="position:relative;left:40px;top:8vh;padding:10px;">Title Of Blog</h3>
+            <textarea style="position:relative;left:40px;top:6vh;border:none;" rows="13" cols="50"> HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</textarea>
+        </div>
+
+
+        <div class="form" style="position:absolute;top:225vh;left:180px;">
+
+            <input class="input-field"
+                   type="text"
+                   id="Name"
+                   placeholder="Name"
+                   style="position:relative;left:60px;top:10vh;width:1050px;height:40px;border-radius: 15px;border:1px solid grey;">
+
+            <input class="input-field"
+                   type="text"
+                   id="Email"
+                   placeholder="Email"
+                   style="position:relative;left:60px;top:15vh;width:1050px;height:40px;border-radius: 15px;border:1px solid grey;">
+
+            <textarea placeholder="Message" style="position:relative;left:60px;top:20vh;width:1050px;height:300px;border-radius: 15px;border:1px solid grey;"></textarea>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--SHARE THIS PAGE-->
+    <div class="share">
+        <hr style="position:absolute;width:100%;height:1px;top:323vh;color:orange;background-color:#ffb84d" />
+        <h5 style="font-family:Comic sans MS;position:absolute;left:688px;top:328vh;background-color:white"><i>Share this page</i></h5>
+        <a href="https://twitter.com/lfc_mmf">
+            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:30px;height:30px;left:700px;top:334vh " />
+        </a>
+
+        <a href="https://instagram.com/lfc_mmf?igshid=jywrr2ebbvm">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:absolute;width:28px;height:28px;left:745px;top:334vh;" />
+        </a>
+
+        <a href="https://facebook.com">
+            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:absolute;width:33px;height:33px;left:780px;top:334vh;" />
+        </a>
+
+        <hr style="position:absolute;width:100%;height:0.9px;top:339vh;color:orange;background-color:#ffb84d" />
+    </div>
+
+
+    <div style="background-color:white;height:28vh">
+
+        <button class="btn2" style="left:38%;top:346vh;width:180px">Write a Letter</button>
+        <button class="btn2" style="left:52%;top:346vh;width:180px">Donate</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--CONTACT US FOOTER-->
+
+    <div class="contact">
+        <p style="position:absolute;left:135px;top:366vh;color:white;font-size:18px">
+            About us
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:135px" />
+        <p style="position:absolute;top:374vh;color:white;left:135px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+
+
+        <p style="position:absolute;left:350px;top:366vh;color:white;font-size:18px">
+            Our Work
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:350px" />
+        <p style="position:absolute;top:374vh;color:white;left:350px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+        <p style="position:absolute;left:575px;top:366vh;color:white;font-size:18px">
+            Get Involved
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:575px" />
+        <p style="position:absolute;top:374vh;color:white;left:575px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+        <p style="position:absolute;left:795px;top:366vh;color:white;font-size:18px">
+            Media Centre
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:795px" />
+        <p style="position:absolute;top:374vh;color:white;left:795px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+
+        <p style="position:absolute;left:135px;top:398vh;color:white;font-size:14px">
+            Address-
+        </p>
+        <p style="position:absolute;left:135px;top:402vh;color:orange;font-size:14px">
+            TO BE FILLED
+        </p>
+
+        <p style="position:absolute;right:350px;top:366vh;color:orange;font-size:18px">
+            Contact Us
+        </p>
+
+        <input class="input-field"
+               type="text"
+               id="Name"
+               placeholder="Name"
+               style="position:absolute;right:200px;top:372vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="Contact"
+               placeholder="Contact"
+               style="position:absolute;right:200px;top:380vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="MailID"
+               placeholder="error@mail.com"
+               style="position:absolute;right:200px;top:388vh;width:250px;border-radius: 15px;">
+
+        <button class="btn2" style="left:80%;top:398vh;background-color:orange">
+            Send
+        </button>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
