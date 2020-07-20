@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <linf rel="stylesheet" href="BloggerSans-Bold.css"></linf>
+    <linf rel="stylesheet" href="BloggerSans-BoldItalic.css"></linf>
+    <linf rel="stylesheet" href="BloggerSans-Italic.css"></linf>
+    <linf rel="stylesheet" href="BloggerSans.css"></linf>
+
+    <style>
+
+        @font-face {
+            font-family: happy;
+            src: url('fonts/My Happy Ending - TTF.TTF');
+        }
+
+        @font-face {
+            font-family: cheer;
+            src: url('fonts/Cheeronsta Regular.otf');
+        }
+
+        @font-face {
+            font-family: blog;
+            src: url('fonts/BloggerSans.ttf');
+        }
+
+        .carousel-inner {
+            width: 1520px;
+            height: 1000px;
+        }
+
+        .carousel-item {
+            width: 1520px;
+            height: 1000px;
+        }
+
+
+        .btn {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #ffad33;
+            color: white;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .btn:hover {
+                background-color: #ff9933;
+                color: white;
+            }
+
+        .btn2 {
+            position: absolute;
+            background-color: MediumSeaGreen;
+            border-radius: 5px;
+            color: white;
+            font-size: 10px;
+            top: 1.5%;
+            left: 72%;
+            width: 100px;
+            border: none;
+            height: 32px;
+            font-size: 20px;
+            font-family: Comic Sans MS;
+            text-align: center;
+        }
+
+
+            .btn2:hover {
+                background-color: #39ac6d;
+            }
+
+
+        .top-right {
+            position: absolute;
+            font-family: Comic Sans MS;
+            font-size: 110%;
+            top: 8px;
+            right: 16px;
+            color: white;
+            background-color: #7b1e5e;
+            padding: 16px 30px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .divOne {
+            height: 80px;
+            border-bottom: 40px solid white;
+            text-align: left;
+            background-color: #7b1e5e;
+            padding: 26px 40px;
+            border-bottom-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+        }
+
+        #letters {
+            position: absolute;
+            font-family: happy;
+            font-size:25pt;
+            top:4px;
+            left: 90px;
+            color: white;
+        }
+
+        #text {
+            position: absolute;
+            left: 100px;
+            top: 180%;
+            font-family: Comic Sans MS;
+            font-size: 130%;
+            color: black;
+        }
+
+        .navbuttons {
+            position: absolute;
+            border-radius: 5px;
+            color: black;
+            border-color: white;
+            background-color: white;
+            font-size: 10px;
+            top: 8.5%;
+            left: 10%;
+            width: 130px;
+            border: none;
+            height: 34px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            text-align: center;
+        }
+
+            .navbuttons:hover {
+                color: #ffa31a;
+                text-decoration: underline;
+            }
+
+        #search {
+            position: absolute;
+            top: 8.5%;
+            left: 80%;
+            float: right;
+            border: 1.5px solid #ffad33;
+            border-radius: 25px;
+            background: url() no-repeat scroll 7px 7px;
+            padding-left: 30px;
+            background-image: url("https://icon-library.com/images/search-icon-html/search-icon-html-6.jpg");
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            background-position: 2px 1px 2px;
+        }
+
+        .overview {
+            height: 100vh;
+            background-color: #ffffe6;
+            background: url('images/Home_overview.png') bottom left no-repeat,url('images/Gradient_03.png') left top no-repeat;
+            background-size: contain, 120% 120%;
+        }
+
+        .video {
+            height: 100vh;
+            background-color: white;
+            background: url('images/Home_Vedio.png') left top no-repeat;
+            background-size: contain;
+        }
+
+        video {
+            margin-top: 12%;
+            margin-left: 10%;
+        }
+
+        .letterspg {
+            height: 100vh;
+            background-color: #ffffe6;
+            background: url('images/Home_letters.png') bottom no-repeat,url('images/Gradient.png') left top no-repeat;
+            background-size: contain,100% 100%;
+        }
+
+        #showletters {
+            height: 370px;
+            width: 250px;
+            border-bottom: 340px solid white;
+            text-align: justify;
+            background-color: #00cc66;
+            padding: 5px;
+        }
+
+        .tweets {
+            height: 100vh;
+            background: url('images/Home_MMFInstagram.png') bottom no-repeat,url(images/Gradient_02.png) left bottom no-repeat;
+            background-size: contain,100% 100%;
+        }
+
+        .MMF {
+            height: 105vh;
+            background: url('images/Home_letters.png') left top no-repeat;
+            background-size: 205vh;
+        }
+
+
+        .contact {
+            height: 70vh;
+            background: url('images/Footer.png') left top no-repeat, #ac3973;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="divOne">
+		<button class="btn2">Letter</button>
+		<button class="btn2" style="left:82%">
+			Donate
+		</button>
+
+		<p id="letters">Letters for Change</p>
+        <img src="images\Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px"/>
+		<button class="navbuttons" style="left: 4%">HOME</button>
+		<button class="navbuttons" style="left: 10%">ABOUT US</button>
+		<button class="navbuttons" style="left: 17%">OUR WORK</button>
+		<button class="navbuttons" style="left: 25%">GET INVOLVED</button>
+		<button class="navbuttons" style="left: 35%">MEDIA CENTRE</button>
+		<button class="navbuttons" style="left: 43%">FAQ</button>
+		<button class="navbuttons" style="left: 49%">CONTACT US</button>
+		<input class="input-field"
+			   type="text"
+			   id="search"
+			   placeholder="Search..">
+	</div>
+	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images\home1.jpeg" class="d-block w-100" alt="...">
+				<p class="top-right">Letters Received-206</p>
+				<button class="btn">Donate</button>
+				<div class="carousel-caption d-none d-md-block">
+                    <h4>
+                        Your support can help the voices of children reach the right people. Participate in creating change. Every rupee counts!
+                    </h4>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images\home2.jpeg" class="d-block w-100" alt="...">
+				<p class="top-right">Letters Received-206</p>
+				<button class="btn">Donate</button>
+				<div class="carousel-caption d-none d-md-block">
+                    <h4>
+                        Your support can help the voices of children reach the right people. Participate in creating change.  Every rupee counts!
+                    </h4>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="https://northstarstone.biz/wp-content/uploads/2013/04/11634-400-300.jpg" class="d-block w-100" alt="...">
+				<p class="top-right">Letters Received-206</p>
+				<button class="btn">Donate</button>
+				<div class="carousel-caption d-none d-md-block">
+                    <h4>
+                        Your support can help the voices of children reach the right people. Participate in creating change.  Every rupee counts!
+                    </h4>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images\..." class="d-block w-100" alt="...">
+				<p class="top-right">Letters Received-206</p>
+				<button class="btn">Donate</button>
+				<div class="carousel-caption d-none d-md-block">
+                    <h4>
+                        Your support can help the voices of children reach the right people. Participate in creating change.  Every rupee counts!
+                    </h4>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images\..." class="d-block w-100" alt="...">
+				<p class="top-right">Letters Received-206</p>
+				<button class="btn">Donate</button>
+				<div class="carousel-caption d-none d-md-block">
+                    <h4>
+                        Your support can help the voices of children reach the right people. Participate in creating change.  Every rupee counts!
+                    </h4>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+
+
+	<!--OVERVIEW-->
+
+	<div class="overview" style="border-bottom-left-radius:5%;border-bottom-right-radius:5%;box-shadow: 5px 1px 40px 3px orange">
+		<h2 style="position:absolute;font-family:Comic Sans MS;color:#7b1e5e;left:100px;top:185%;">Overview</h2>
+        <div style="position:relative;top:190px">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" style="float:right;width:500px;padding-right:50px;">
+            <p id="text" style="padding:30px;margin-right:550px"> 
+            Mahika Mishra Foundation (MMF), founded in 2019, is a non-profit organization registered as a Section 8 Company under the Companies Act (2013). 
+            It is based in Mumbai. MMF aims to create opportunities for children to express their opinions and concerns. 
+            Mahika observed that globally, children do not have the right to vote. Most of their decisions are taken by adults.
+            <br />
+            To change this, Mahika Mishra Foundation runs Letters for Change, an initiative that wants children to write letters on issues they think will change their lives.
+            MMF will take these letters to the right people, creating awareness about these issues.
+            </p>
+        </div>
+	</div>
+
+
+
+	<!--VIDEO-->
+	<div class="video">
+		<video width="430" height="300" controls autoplay>
+			<source src="https://youtu.be/LKPD_a4xd7M" type="video/mp4">
+		</video>
+
+
+        <p id="text" style="top:300vh;right:10%;left:45%;font-family:blog;font-size:22pt">
+            <b>“ We worry about what a child will become tomorrow, yet we forget that s/he is someone today.”</b>
+            <br />
+            <br />
+            <font style="color:dimgray"><b>Stacia Tauscher,
+                <br />
+                Dancer & Artist.</b></font>
+        </p>
+	</div>
+
+
+
+
+
+
+
+
+	<!--Letters-->
+	<div class="letterspg" style="border-bottom-left-radius:5%;border-bottom-right-radius:5%;box-shadow: 5px 1px 20px 3px cyan;">
+		<h2 style="position:absolute;font-family:Comic Sans MS;color:#7b1e5e;left:100px;top:375vh">Letters</h2>
+		<div id="showletters" style="position:absolute;top:390vh;left:150px">
+			Sample letter 1
+			<br />
+			<br />
+			contents of letter
+		</div>
+
+		<div id="showletters" style="position:absolute;top:390vh;left:480px">
+			Sample letter 2
+			<br />
+			<br />
+			contents of letter
+		</div>
+
+		<div id="showletters" style="position:absolute;top:390vh;left:810px">
+			Sample letter 3
+			<br />
+			<br />
+			contents of letter
+		</div>
+
+		<div id="showletters" style="position:absolute;top:390vh;left:1140px">
+			Sample letter 4
+			<br />
+			<br />
+			contents of letter
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!--TWEETS & INSTAGRAM-->
+
+	<div class="tweets" style="border-bottom-left-radius:5%;border-bottom-right-radius:5%;box-shadow: 5px 1px 20px 3px grey;">
+		<img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:28px;height:28px;left:140px;top:475vh " />
+		<h3 style="font-family:Comic sans MS;color:#730099;position:absolute;left:180px;top:475vh;font-size:20px">Tweets by MMF</h3>
+		<img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:absolute;width:25px;height:25px;left:140px;top:517vh;" />
+		<h3 style="font-family:Comic sans MS;color:#730099;position:absolute;left:180px;top:517vh;font-size:20px">MMF on Instagram</h3>
+	</div>
+
+
+
+
+
+
+	<!--MMF-->
+    <div class="MMF">
+        <h4 style="font-family:cheer;color:#730099;position:absolute;left:700px;top:588vh;">An Initiative by</h4>
+        <img src="images\Complete mmf logo.jpg"  style="position:absolute;width:20%;height:9%;top:595vh;left:620px;"/>
+        <hr style="position:absolute;width:100%;height:1px;top:642vh;color:orange;background-color:#ffb84d" />
+        <h5 style="font-family:Comic sans MS;position:absolute;left:688px;top:649vh;"><i>Share this page</i></h5>
+        <a href="https://twitter.com/lfc_mmf">
+            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:30px;height:30px;left:700px;top:655vh " />
+        </a>
+
+        <a href="https://instagram.com/lfc_mmf?igshid=jywrr2ebbvm">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:absolute;width:28px;height:28px;left:740px;top:655vh;" />
+        </a>
+
+        <a href="https://facebook.com">
+            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:absolute;width:33px;height:33px;left:780px;top:655vh;" />
+        </a>
+
+        <hr style="position:absolute;width:100%;height:0.9px;top:660vh;color:orange;background-color:#ffb84d" />
+    </div>
+
+
+	<div style="height:16vh">
+
+		<button class="btn2" style="left:38%;top:668vh;width:180px">Write a Letter</button>
+		<button class="btn2" style="left:52%;top:668vh;width:180px">Donate</button>
+
+	</div>
+
+   
+
+
+
+
+
+
+
+    <!--CONTACT US FOOTER-->
+
+    <div class="contact">
+        <p style="position:absolute;left:135px;top:692vh;color:white;font-size:18px">
+            About us
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:694vh;color:white;background-color:white;left:135px" />
+        <p style="position:absolute;top:700vh;color:white;left:135px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+
+
+        <p style="position:absolute;left:350px;top:692vh;color:white;font-size:18px">
+            Our Work
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:694vh;color:white;background-color:white;left:350px" />
+        <p style="position:absolute;top:700vh;color:white;left:350px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+        <p style="position:absolute;left:575px;top:692vh;color:white;font-size:18px">
+            Get Involved
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:694vh;color:white;background-color:white;left:575px" />
+        <p style="position:absolute;top:700vh;color:white;left:575px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+        <p style="position:absolute;left:795px;top:692vh;color:white;font-size:18px">
+            Media Centre
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:694vh;color:white;background-color:white;left:795px" />
+        <p style="position:absolute;top:700vh;color:white;left:795px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+
+        <p style="position:absolute;left:135px;top:730vh;color:white;font-size:14px">
+            Address-
+        </p>
+        <p style="position:absolute;left:135px;top:734vh;color:orange;font-size:14px">
+            TO BE FILLED
+        </p>
+
+        <p style="position:absolute;right:350px;top:692vh;color:orange;font-size:18px">
+            Contact Us
+        </p>
+
+        <input class="input-field"
+               type="text"
+               id="Name"
+               placeholder="Name"
+               style="position:absolute;right:200px;top:700vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="Contact"
+               placeholder="Contact"
+               style="position:absolute;right:200px;top:710vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="MailID"
+               placeholder="error@mail.com"
+               style="position:absolute;right:200px;top:720vh;width:250px;border-radius: 15px;">
+
+        <button class="btn2" style="left:80%;top:730vh;background-color:orange">
+            Send
+        </button>
+
+
+    </div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
