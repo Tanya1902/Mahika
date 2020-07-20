@@ -5,20 +5,11 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
     <style>
 
-        @font-face {
-            font-family: happy;
-            src: url('My Happy Ending - TTF.TTF');
-        }
+    @font-face { font-family: happy; src: url('My Happy Ending - TTF.TTF'); }
 
-        @font-face {
-            font-family: cheer;
-            src: url('Cheeronsta Regular.otf');
-        }
+    @font-face { font-family: cheer; src: url('Cheeronsta Regular.otf'); }
 
-        @font-face {
-            font-family: blog;
-            src: url('BloggerSans.ttf');
-        }
+    @font-face { font-family: blog; src: url('BloggerSans.ttf'); }
 
         .btn {
             position: absolute;
@@ -48,11 +39,11 @@
             color: white;
             font-size: 10px;
             top: 1.5%;
-            left: 72%;
-            width: 100px;
+            left: 75%;
+            width: 150px;
             border: none;
             height: 32px;
-            font-size: 20px;
+            font-size: 15px;
             font-family: Comic Sans MS;
             text-align: center;
         }
@@ -68,7 +59,7 @@
             font-family: Comic Sans MS;
             font-size: 105%;
             top: 120px;
-            right: 16px;
+            right: 0px;
             color: white;
             background-color: #7b1e5e;
             padding: 10px 30px;
@@ -79,12 +70,13 @@
 
         .divOne {
             height: 80px;
-            border-bottom: 40px solid white;
+            border-bottom: 50px solid white;
             text-align: left;
             background-color: #7b1e5e;
             padding: 26px 40px;
-            border-bottom-left-radius: 40%;
-            border-bottom-right-radius: 40%;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow:grey 2px 1px 10px 1px;
         }
 
         #letters {
@@ -152,13 +144,13 @@
         .AboutUs {
             height: 90vh;
             background-color: floralwhite;
-            background: url('Intial.png') top left no-repeat;
+            background: url('images\Intial.png') top left no-repeat;
             background-size: contain,cover;
         }
 
         #shadow-text {
             position: absolute;
-            height: 43vh;
+            height: 37vh;
             width: 750px;
             box-shadow: 2px 1px 5px 2px grey;
             right: 70px;
@@ -212,25 +204,36 @@
             background: url('Footer.png') left top no-repeat, #ac3973;
             background-size: contain;
         }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ffa31a;
+            text-decoration:none;
+        }
+        .active{
+            color:#ffa31a !important 
+        }
     </style>
 </head>
 
 <body>
     <div class="divOne">
-        <button class="btn2">Letter</button>
-        <button class="btn2" style="left:82%">
+        <button class="btn2">Write a Letter</button>
+        <button class="btn2" style="left:86.5%">
             Donate
         </button>
 
-        <p id="letters">Mahika Mishra Foundation</p>
+        <p id="letters">Letters for Change</p>
         <img src="Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
-        <button class="navbuttons" style="left: 4%">HOME</button>
-        <button class="navbuttons" style="left: 10%">ABOUT US</button>
-        <button class="navbuttons" style="left: 17%">OUR WORK</button>
-        <button class="navbuttons" style="left: 25%">GET INVOLVED</button>
-        <button class="navbuttons" style="left: 35%">MEDIA CENTRE</button>
-        <button class="navbuttons" style="left: 43%">FAQ</button>
-        <button class="navbuttons" style="left: 49%">CONTACT US</button>
+        <button class="navbuttons" style="left: 4%" ><a href="index.html">HOME</a></button>
+		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html" class="active">ABOUT US</a></button>
+		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
+		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html">GET INVOLVED</a></button>
+		<button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
+		<button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
+		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
         <input class="input-field"
                type="text"
                id="search"
@@ -244,7 +247,7 @@
     <!--ABOUT US-->
     <div class="AboutUs">
         <h2 style="position:absolute;top:190px;left:120px;color:#7b1e5e;font-family:cheer">About Us</h2>
-        <img src="change.jpg" style="position:absolute;top:290px;left:120px;float:left;width:450px;height:300px;border-radius:30px;" />
+        <img src="change.jpg" style="position:absolute;top:290px;left:120px;float:left;width:450px;height:320px;border-radius:30px;" />
         <div id="shadow-text" style="padding:30px;font-family:blog;font-size:19.5px">
             Letters for Change is a movement by the children, for the children.
             You may not be 18 yet. You may still be at school, but you are still aware of the issues that affect your life. And you want to talk about them. It may be about education, public transportation, environment, safety, and many other issues that affect all of our lives.
@@ -273,7 +276,7 @@
             <b style="font-size:29pt;padding-top:30px">Chief Letter Writer</b>
             <br />
             <br/>
-            Our passionate young founder, Mahika is a bright and charming 13-year-old who believes in the power of words, and more in the power of children. “They can do anything,” she says. Mahika is a fan of Marvel and the Jazz Age, and a proud Taurus. She is a master-chef in the kitchen and can bake the most delicious of pizzas from scratch. It is this magic of childhood, this energy, innocence and perspective that Letters For Change is all about. And our chief letter writer Mahika, is truly a Girl on Fire, for “she’s got her head in the clouds and she's not backing down.”
+            Our passionate young founder, Mahika is a bright and charming 13-year-old who believes in the power of words, and more in the power of children. ï¿½They can do anything,ï¿½ she says. Mahika is a fan of Marvel and the Jazz Age, and a proud Taurus. She is a master-chef in the kitchen and can bake the most delicious of pizzas from scratch. It is this magic of childhood, this energy, innocence and perspective that Letters For Change is all about. And our chief letter writer Mahika, is truly a Girl on Fire, for ï¿½sheï¿½s got her head in the clouds and she's not backing down.ï¿½
 
         </p>
         </div>
@@ -329,7 +332,7 @@
         <h2 style="position:absolute;top:320vh;left:110px;color:#7b1e5e;font-family:cheer">Meet the Initial Contributors</h2>
 
         <div class="w3-container">
-            <div class="w3-card-4" style="position:absolute;top:335vh;left:210px;width:225px;height:500px;background-color:white">
+            <div class="w3-card-4" style="position:absolute;top:335vh;left:210px;width:225px;height:500px;background-color:white;border-radius:10px;">
                 <img src="growing-sunflowers.jpg" alt="5.jpeg" style="width:225px;height:200px;">
                 <div class="w3-container w3-center">
                     <p>CONTENT CONTENT</p>
@@ -339,7 +342,7 @@
 
 
         <div class="w3-container">
-            <div class="w3-card-4" style="position:absolute;top:335vh;left:485px;width:225px;height:500px;background-color:white">
+            <div class="w3-card-4" style="position:absolute;top:335vh;left:485px;width:225px;height:500px;background-color:white;border-radius:10px;">
                 <img src="dahlia.jpg" alt="5.jpeg" style="width:225px;height:200px;">
                 <div class="w3-container w3-center">
                     <p>CONTENT CONTENT</p>
@@ -348,7 +351,7 @@
         </div>
 
         <div class="w3-container">
-            <div class="w3-card-4" style="position:absolute;top:335vh;left:760px;width:225px;height:500px;background-color:white">
+            <div class="w3-card-4" style="position:absolute;top:335vh;left:760px;width:225px;height:500px;background-color:white;border-radius:10px;">
                 <img src="6.jpg" alt="5.jpeg" style="width:225px;height:200px;">
                 <div class="w3-container w3-center">
                     <p>CONTENT CONTENT</p>
@@ -358,7 +361,7 @@
 
 
         <div class="w3-container">
-            <div class="w3-card-4" style="position:absolute;top:335vh;left:1035px;width:225px;height:500px;background-color:white">
+            <div class="w3-card-4" style="position:absolute;top:335vh;left:1035px;width:225px;height:500px;background-color:white;border-radius:10px;">
                 <img src="1.jpg" alt="5.jpeg" style="width:225px;height:200px;">
                 <div class="w3-container w3-center">
                     <p>CONTENT CONTENT</p>
@@ -509,6 +512,11 @@
         </button>
 
 
+    </div>
+
+    <div style="height:10vh;">
+        <h4 style="font-family:cheer;color:#730099;position:absolute;left:700px;top:525vh;">An Initiative by</h4>
+        <img src="Complete mmf logo.jpg"  style="position:absolute;width:20%;height:9%;top:530vh;left:620px;"/>
     </div>
 </body>
 </html>
