@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,22 +8,22 @@
 
         @font-face {
             font-family: happy;
-            src: url('fonts/My Happy Ending - TTF.TTF');
+            src: url('My Happy Ending - TTF.TTF');
         }
 
         @font-face {
             font-family: cheer;
-            src: url('fonts/Cheeronsta Regular.otf');
+            src: url('Cheeronsta Regular.otf');
         }
 
         @font-face {
             font-family: blog;
-            src: url('fonts/BloggerSans.ttf');
+            src: url('BloggerSans.ttf');
         }
 
         @font-face {
             font-family: varela;
-            src: url('fonts/Varela-Regular.TTF');
+            src: url('Varela-Regular.TTF');
         }
 
         .btn {
@@ -73,7 +74,7 @@
             font-family: Comic Sans MS;
             font-size: 105%;
             top: 150px;
-            right: 16px;
+            right: 0px;
             color: white;
             background-color: #7b1e5e;
             padding: 10px 30px;
@@ -84,7 +85,7 @@
 
         .divOne {
             height: 80px;
-            border-bottom: 40px solid white;
+            border-bottom: 50px solid white;
             text-align: left;
             background-color: #7b1e5e;
             padding: 26px 40px;
@@ -96,8 +97,8 @@
         #letters {
             position: absolute;
             font-family: happy;
-            font-size: 17pt;
-            top: 0px;
+            font-size: 22pt;
+            top: -15px;
             left: 80px;
             color: white;
         }
@@ -165,18 +166,29 @@
         .FAQs{
             height: 195vh;
             background-color: white;
-            background: url('images/Buterflies.png') top left no-repeat;
+            background: url('Buterflies.png') top left no-repeat;
             background-size: auto;
         }
 
         .contact {
             height: 70vh;
-            background: url('images/Footer.png') left top no-repeat, #ac3973;
+            background: url('Footer.png') left top no-repeat, #ac3973;
             background-size: contain;
         }
 
         .share {
             height: 35vh;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ffa31a;
+            text-decoration:none;
+        }
+        .active{
+            color:#ffa31a !important 
         }
     </style>
 </head>
@@ -188,14 +200,14 @@
         </button>
 
         <p id="letters">Letters for Change</p>
-        <img src="images\Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
-        <button class="navbuttons" style="left: 4%">HOME</button>
-        <button class="navbuttons" style="left: 10%">ABOUT US</button>
-        <button class="navbuttons" style="left: 17%">OUR WORK</button>
-        <button class="navbuttons" style="left: 25%">GET INVOLVED</button>
-        <button class="navbuttons" style="left: 35%">MEDIA CENTRE</button>
-        <button class="navbuttons" style="left: 43%">FAQ</button>
-        <button class="navbuttons" style="left: 49%">CONTACT US</button>
+        <img src="Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
+        <button class="navbuttons" style="left: 4%" ><a href="index.html">HOME</a></button>
+		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
+		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
+		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html">GET INVOLVED</a></button>
+		<button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
+		<button class="navbuttons" style="left: 43%"><a href="FAQs.html" class="active">FAQ</a></button>
+		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
         <input class="input-field"
                type="text"
                id="search"
@@ -254,7 +266,7 @@
         <h4 style="position:relative;top:112vh;left:120px;font-family:blog;font-size:22px;"><b>Fundraise</b></h4>
 
         <p style="position:relative;top:112vh;left:120px;font-family:blog;font-size:20px; background-color:white">Fundraising at MMF is all about you. Doing things your way help MMF make a difference.
-           You can support MMF�s initiatives by sponsoring our campaign or by holding <br> your own fundraiser and starting the conversation to ensure children�s voices are heard loud and clear.</p>
+           You can support MMFï¿½s initiatives by sponsoring our campaign or by holding <br> your own fundraiser and starting the conversation to ensure childrenï¿½s voices are heard loud and clear.</p>
 
 
         <div id="shadow-text" style="height:30vh;position:relative;top:118vh;">
@@ -415,4 +427,5 @@
         </button>
     </div>
 </body>
+
 </html>

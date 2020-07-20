@@ -79,7 +79,7 @@
             font-family: Comic Sans MS;
             font-size: 105%;
             top: 60px;
-            right: 16px;
+            right: 0px;
             color: white;
             background-color: #7b1e5e;
             padding: 10px 30px;
@@ -186,6 +186,17 @@
             background: url('images/Footer.png') left top no-repeat, #ac3973;
             background-size: contain;
         }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ffa31a;
+            text-decoration:none;
+        }
+        .active{
+            color:#ffa31a !important 
+        }
     </style>
 </head>
 <body>
@@ -195,15 +206,17 @@
             Donate
         </button>
 
-        <p id="letters">Mahika Mishra Foundation</p>
-        <img src="images\Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
-        <button class="navbuttons" style="left: 4%">HOME</button>
-        <button class="navbuttons" style="left: 10%">ABOUT US</button>
-        <button class="navbuttons" style="left: 17%">OUR WORK</button>
-        <button class="navbuttons" style="left: 25%">GET INVOLVED</button>
-        <button class="navbuttons" style="left: 35%">MEDIA CENTRE</button>
-        <button class="navbuttons" style="left: 43%">FAQ</button>
-        <button class="navbuttons" style="left: 49%">CONTACT US</button>
+
+        <p id="letters">Letters for Change</p>
+        <img src="Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
+        <button class="navbuttons" style="left: 4%" ><a href="index.html">HOME</a></button>
+		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
+		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
+		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html" class="active">GET INVOLVED</a></button>
+		<button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
+		<button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
+		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
+
         <input class="input-field"
                type="text"
                id="search"
@@ -311,10 +324,12 @@
                 <img src="images\change.jpg" alt="5.jpeg" style="width:320px;height:260px;border-top-left-radius:20px;border-top-right-radius:20px">
                 <div class="w3-container w3-center">
                     <h5 style="color:mediumaquamarine;margin:15px">Volunteer/Intern</h5>
+
                     <h7 style="margin-left:15px;margin-right:15px;"><b>Act as if what you do makes a &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  difference. It does.</b></h7>
                     <p style="margin-left:15px;margin-right:15px;font-size:14px">
                         Welcome! Thanks for your interest in volunteering. Together, lets make a difference in
                         childrens lives!
+
                     </p>
                 </div>
             </div>

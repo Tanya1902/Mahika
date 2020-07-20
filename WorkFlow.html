@@ -85,13 +85,14 @@
             padding: 26px 40px;
             border-bottom-left-radius: 40%;
             border-bottom-right-radius: 40%;
+            
         }
 
         #letters {
             position: absolute;
             font-family: happy;
-            font-size: 17pt;
-            top: 0px;
+            font-size: 22pt;
+            top: -10px;
             left: 80px;
             color: white;
         }
@@ -195,6 +196,17 @@
             background: url('MMF.png') left top no-repeat,white;
             background-size: 240vh;
         }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ffa31a;
+            text-decoration:none;
+        }
+        .active{
+            color:#ffa31a !important 
+        }
     </style>
 </head>
 <body>
@@ -206,13 +218,13 @@
 
         <p id="letters">Letters for Change</p>
         <img src="Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
-        <button class="navbuttons" style="left: 4%">HOME</button>
-        <button class="navbuttons" style="left: 10%">ABOUT US</button>
-        <button class="navbuttons" style="left: 17%">OUR WORK</button>
-        <button class="navbuttons" style="left: 25%">GET INVOLVED</button>
-        <button class="navbuttons" style="left: 35%">MEDIA CENTRE</button>
-        <button class="navbuttons" style="left: 43%">FAQ</button>
-        <button class="navbuttons" style="left: 49%">CONTACT US</button>
+        <button class="navbuttons" style="left: 4%" ><a href="index.html">HOME</a></button>
+		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
+		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html" class="active">OUR WORK</a></button>
+		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html">GET INVOLVED</a></button>
+		<button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
+		<button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
+		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
         <input class="input-field"
                type="text"
                id="search"
@@ -225,9 +237,9 @@
 
     <div class="subnav">
 
-        <button id="whitebutton" style="border-bottom-left-radius:10px;">Work Flow</button>
-        <button id="whitebutton" style="left:505px">Letters for Change</button>
-        <button id="whitebutton" style="left:1010px;border-bottom-right-radius:10px;">Bringing Change</button>
+        <button id="whitebutton" style="border-bottom-left-radius:10px;background:#ffa31a;color:white;"><a href="WorkFlow.html" style="color:white;">Work Flow</a></button>
+        <button id="whitebutton" style="left:505px"><a href="">Letters for Change</a></button>
+        <button id="whitebutton" style="left:1010px;border-bottom-right-radius:10px;"><a href="OurWork_BringingChange.html">Bringing Change</a></button>
     </div>
 
 
