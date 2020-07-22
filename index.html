@@ -12,17 +12,17 @@
 
         @font-face {
             font-family: happy;
-            src: url('My Happy Ending - TTF.TTF');
+            src: url('fonts/My Happy Ending - TTF.TTF');
         }
 
         @font-face {
             font-family: cheer;
-            src: url('Cheeronsta Regular.otf');
+            src: url('fonts/Cheeronsta Regular.otf');
         }
 
         @font-face {
             font-family: blog;
-            src: url('BloggerSans.ttf');
+            src: url('fonts/BloggerSans.ttf');
         }
 
         .carousel-inner {
@@ -162,15 +162,15 @@
 
         .overview {
             height: 100vh;
-            
-            background: url('Home_overview.png') no-repeat,url('Gradient_03.png')  no-repeat;
+            background-color: #ffffe6;
+            background: url('images/Home_overview.png') bottom left no-repeat,url('images/Gradient_03.png') left top no-repeat;
             background-size: 120% 120%;
         }
 
         .video {
             height: 100vh;
             background-color: white;
-            background: url('Home_Vedio.png') left top no-repeat;
+            background: url('images/Home_Vedio.png') left top no-repeat;
             background-size: contain;
         }
 
@@ -182,7 +182,7 @@
         .letterspg {
             height: 100vh;
             background-color: #ffffe6;
-            background: url('Home_letters.png') bottom no-repeat,url(Gradient.png) left top no-repeat;
+            background: url('images/Home_letters.png') bottom no-repeat,url('images/Gradient.png') left top no-repeat;
             background-size: contain,100% 100%;
         }
 
@@ -196,26 +196,27 @@
         }
 
         .tweets {
+            background: url('images/Home_MMFInstagram.png') bottom no-repeat,url(images/Gradient_02.png) left bottom no-repeat;
             height: 107vh;
-            background: url('Home_MMFInstagram.png') bottom no-repeat,url(Gradient_02.png) left bottom no-repeat;
             background-size: contain,100% 100%;
         }
 
         .MMF {
+            background: url('images/Home_letters.png') left top no-repeat;
+            background-size: 205vh;
             height: 22vh;
-            
         }
 
 
         .contact {
             height: 70vh;
-            background: url('Footer.png') left top no-repeat, #ac3973;
+            background: url('images/Footer.png') left top no-repeat, #ac3973;
             background-size: contain;
             
         }
         a{
             color:black;
-text-decoration: none;
+            text-decoration: none;
         }
         a:hover{
             color:#ffa31a;
@@ -238,7 +239,8 @@ text-decoration: none;
 		</button>
 
 		<p id="letters">Letters for Change</p>
-        <img src="Logo.png" align="left" style="position:absolute;top:0;left:0;width:80px;height:110px"/>
+        <img src="images\Logo.png" align="left" style="position:absolute;top:0;left:0;width:80px;height:110px"/>
+
 		<button class="navbuttons" style="left: 4%" ><a href="index.html" class="active">HOME</a></button>
 		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
 		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
@@ -246,10 +248,11 @@ text-decoration: none;
 		<button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
 		<button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
 		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
+
 		<input class="input-field"
 			   type="text"
 			   id="search"
-			   placeholder="Search.."></br>
+			   placeholder="Search.."><br/>
 	</div>
 	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -261,7 +264,7 @@ text-decoration: none;
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="home1.jpeg" class="d-block w-100" alt="...">
+				<img src="images\home1.jpeg" class="d-block w-100" alt="...">
 				<p class="top-right">Letters Received-206</p>
 				
 				<div class="carousel-caption d-none d-md-block">
@@ -272,7 +275,7 @@ text-decoration: none;
                 <button class="btn">Donate</button>
 			</div>
 			<div class="carousel-item">
-				<img src="home2.jpeg" class="d-block w-100" alt="...">
+				<img src="images\home2.jpeg" class="d-block w-100" alt="...">
 				<p class="top-right">Letters Received-206</p>
 				<button class="btn">Donate</button>
 				<div class="carousel-caption d-none d-md-block">
@@ -429,9 +432,9 @@ text-decoration: none;
 
 	<!--MMF-->
     <div class="MMF">
-       
-        <hr style="position:absolute;width:100%;height:1px;top:500vh;color:orange;background-color:#ffb84d" />
+        <hr style="position:absolute;width:100%;height:1px;top:503vh;color:orange;background-color:#ffb84d" />
         <h5 style="font-family:Comic sans MS;position:absolute;left:688px;top:507vh;"><i>Share this page</i></h5>
+
         <a href="https://twitter.com/lfc_mmf">
             <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:30px;height:30px;left:700px;top:512vh " />
         </a>
@@ -448,7 +451,7 @@ text-decoration: none;
     </div>
 
 
-	<div style="height:16vh">
+	<div style="height:6vh">
 
 		<button class="btn2" style="left:38%;top:525vh;width:180px">Write a Letter</button>
 		<button class="btn2" style="left:52%;top:525vh;width:180px">Donate</button>
@@ -560,9 +563,9 @@ text-decoration: none;
 
 
     </div>
-    <div style="height:10vh;">
-    <h4 style="font-family:cheer;color:#730099;position:absolute;left:700px;top:610vh;">An Initiative by</h4>
-    <img src="Complete mmf logo.jpg"  style="position:absolute;width:20%;height:9%;top:615vh;left:620px;"/>
+    <div style="height:15vh;">
+    <h4 style="font-family:cheer;color:#730099;position:absolute;left:700px;top:604vh;">An Initiative by</h4>
+    <img src="images/Complete mmf logo.jpg"  style="position:absolute;width:18%;height:6%;top:609vh;left:656px;"/>
 </div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
