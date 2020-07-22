@@ -72,7 +72,7 @@
             font-family: Comic Sans MS;
             font-size: 105%;
             top: 60px;
-            right: 16px;
+            right: 0px;
             color: white;
             background-color: #7b1e5e;
             padding: 10px 30px;
@@ -217,6 +217,17 @@
             background: url('images/Footer.png') left top no-repeat, #ac3973;
             background-size: contain;
         }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ffa31a;
+            text-decoration:none;
+        }
+        .active{
+            color:#ffa31a !important 
+        }
     </style>
 </head>
 <body>
@@ -226,15 +237,17 @@
             Donate
         </button>
 
-        <p id="letters">Mahika Mishra Foundation</p>
-        <img src="images\Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
-        <button class="navbuttons" style="left: 4%">HOME</button>
-        <button class="navbuttons" style="left: 10%">ABOUT US</button>
-        <button class="navbuttons" style="left: 17%">OUR WORK</button>
-        <button class="navbuttons" style="left: 25%">GET INVOLVED</button>
-        <button class="navbuttons" style="left: 35%">MEDIA CENTRE</button>
-        <button class="navbuttons" style="left: 43%">FAQ</button>
-        <button class="navbuttons" style="left: 49%">CONTACT US</button>
+
+        <p id="letters">Letters for Change</p>
+        <img src="Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
+        <button class="navbuttons" style="left: 4%" ><a href="index.html">HOME</a></button>
+		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
+		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
+		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html">GET INVOLVED</a></button>
+		<button class="navbuttons" style="left: 35%"><a href="Blog.html" class="active">MEDIA CENTRE</a></button>
+		<button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
+		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
+
         <input class="input-field"
                type="text"
                id="search"
@@ -246,10 +259,10 @@
 
     <div class="subnav">
 
-        <button id="whitebutton" style="border-bottom-left-radius:10px;">News</button>
-        <button id="whitebutton" style="left:380px">Blog</button>
-        <button id="whitebutton" style="left:760px;border-bottom-right-radius:10px;">Gallery</button>
-        <button id="whitebutton" style="left:1140px;border-bottom-right-radius:10px;">Social Media</button>
+        <button id="whitebutton" style="border-bottom-left-radius:10px;"><a href="">News</a></button>
+        <button id="whitebutton" style="left:380px;background:#ffa31a"><a href="Blog.html" style="color:white;">Blog</a></button>
+        <button id="whitebutton" style="left:760px;border-bottom-right-radius:10px;"><a href="">Gallery</a></button>
+        <button id="whitebutton" style="left:1140px;border-bottom-right-radius:10px;"><a href="">Social Media</a></button>
     </div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
