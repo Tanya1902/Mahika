@@ -12,7 +12,7 @@
 
         @font-face {
             font-family: happy;
-            src: url('fonts/My Happy Ending - TTF.TTF');
+            src: url('fonts/My Happy Ending - TTF.ttf');
         }
 
         @font-face {
@@ -222,6 +222,7 @@
 
         /* The Modal (background) */
         .modal {
+            z-index:16;
             display: none;
             position: fixed;
             z-index: 1;
@@ -236,6 +237,7 @@
 
         /* Modal Content */
         .modal-content {
+            z-index:16;
             position: relative;
             background-color: #fefefe;
             margin: auto;
@@ -248,6 +250,7 @@
 
         /* The Close Button */
         .close {
+            z-index:3;
             color: white;
             position: absolute;
             top: 10px;
@@ -313,7 +316,7 @@
         }
 
         .caption-container {
-            z-index:3
+            z-index:3;
             text-align: center;
             color: white;
         }
@@ -653,7 +656,7 @@
 
 
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" style="z-index: 16;">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
 
