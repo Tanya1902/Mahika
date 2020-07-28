@@ -81,7 +81,12 @@
         }
 
         .divOne {
+
+            position: fixed;
+            z-index:16;
             height: 80px;
+            width:100%;
+
             border-bottom: 50px solid white;
             text-align: left;
             background-color: #7b1e5e;
@@ -117,7 +122,9 @@
         }
 
         .navbuttons {
-            position: absolute;
+
+            position: fixed;
+
             border-radius: 5px;
             color: black;
             border-color: white;
@@ -139,7 +146,9 @@
             }
 
         #search {
-            position: absolute;
+
+            position: fixed;
+
             top: 8.5%;
             left: 80%;
             float: right;
@@ -263,6 +272,30 @@
 
 <body>
     <div class="divOne">
+
+        <button class="btn2" style="position: fixed;"><a href="Get Involved.html" style="color: white;">Write a Letter</a></button>
+        <button class="btn2" style="left:86.5%;position: fixed;">
+           <a href="Get Involved.html" style="color: white;">Donate</a>
+        </button>
+
+        <p id="letters" style="position: fixed;">Letters for Change</p>
+        <img src="images\Logo.png" align="left" style="position:fixed;top:0;left:0;width:80px;height:110px" />
+
+        <button class="navbuttons" style="left: 6%"><a href="index.html" class="active">HOME</a></button>
+        <button class="navbuttons" style="left: 13%"><a href="AboutUs.html">ABOUT US</a></button>
+        <button class="navbuttons" style="left: 21%"><a href="WorkFlow.html">OUR WORK</a></button>
+        <button class="navbuttons" style="left: 30%"><a href="Get Involved.html">GET INVOLVED</a></button>
+        <button class="navbuttons" style="left: 41%"><a href="Blog.html">MEDIA CENTRE</a></button>
+        <button class="navbuttons" style="left: 50%"><a href="FAQs.html">FAQ</a></button>
+        <button class="navbuttons" style="left: 58%"><a href="ContactUs.html">CONTACT US</a></button>
+
+        <input class="input-field"
+               type="text"
+               id="search"
+               placeholder="Search.." style="position: fixed;"><br />
+    </div>
+    <!--<div class="divOne">
+
         <button class="btn2">Write a Letter</button>
         <button class="btn2" style="left:86.5%">
             Donate
@@ -283,8 +316,14 @@
                type="text"
                id="search"
                placeholder="Search..">
-        <!--<p class="top-right">Letters Received-206</p>-->
+
+        <p class="top-right">Letters Received-206</p>
+
+    </div>-->
+
+
     </div>
+
 
 
 
@@ -655,25 +694,29 @@
 
     <!--SHARE THIS PAGE-->
     <div class="share">
-        <hr style="position:absolute;width:100%;height:1px;top:422vh;color:orange;background-color:#ffb84d" />
-        <h5 style="font-family:Comic sans MS;position:absolute;left:688px;top:428vh;background-color:white"><i>Share this page</i></h5>
+
+        <hr style="position:absolute;width:100%;height:1px;top:410vh;color:orange;background-color:#ffb84d" />
+        <h5 style="font-family:Comic sans MS;position:absolute;left:688px;top:414vh;background-color:white"><i>Share this page</i></h5>
         <a href="https://twitter.com/lfc_mmf">
-            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:30px;height:30px;left:700px;top:434vh " />
+            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:30px;height:30px;left:700px;top:422vh " />
         </a>
 
         <a href="https://instagram.com/lfc_mmf?igshid=jywrr2ebbvm">
-            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:absolute;width:28px;height:28px;left:745px;top:434vh;" />
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:absolute;width:28px;height:28px;left:745px;top:422vh;" />
         </a>
 
         <a href="https://facebook.com">
-            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:absolute;width:33px;height:33px;left:780px;top:434vh;" />
+            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:absolute;width:33px;height:33px;left:780px;top:422vh;" />
         </a>
 
-        <hr style="position:absolute;width:100%;height:0.9px;top:439vh;color:orange;background-color:#ffb84d" />
+
+        <hr style="position:absolute;width:100%;height:0.9px;top:427vh;color:orange;background-color:#ffb84d" />
+    
 
 
-        <button class="btn2" style="left:38%;top:446vh;width:180px">Write a Letter</button>
-        <button class="btn2" style="left:52%;top:446vh;width:180px">Donate</button>
+        <button class="btn2" style="left:38%;top:435vh;width:180px">Write a Letter</button>
+        <button class="btn2" style="left:52%;top:435vh;width:180px">Donate</button>
+
 
     </div>
 
@@ -788,7 +831,11 @@
 
     <div style="height:10vh;">
         <h4 style="font-family:cheer;color:#730099;position:absolute;left:700px;top:525vh;">An Initiative by</h4>
-        <img src="Complete mmf logo.jpg" style="position:absolute;width:20%;height:9%;top:530vh;left:620px;" />
+
+
+        <img src="images/Complete mmf logo.jpg"  style="position:absolute;width:20%;height:9%;top:530vh;left:620px;"/>
+
+
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
