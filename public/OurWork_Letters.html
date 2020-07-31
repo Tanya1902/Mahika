@@ -53,7 +53,7 @@ body { font-family: sans-serif; }
 <style>
             @font-face {
                 font-family: happy;
-                src: url('fonts/My Happy Ending - TTF.TTF');
+                src: url('fonts/My Happy Ending - TTF.ttf');
             }
     
             @font-face {
@@ -124,20 +124,23 @@ body { font-family: sans-serif; }
             }
     
             .divOne {
+              position:fixed;
+              z-index:16;
+              width: 100%;
                 height: 80px;
-                border-bottom: 40px solid white;
+                border-bottom: 50px solid white;
                 text-align: left;
                 background-color: #7b1e5e;
                 padding: 26px 40px;
-                border-bottom-left-radius: 40%;
-                border-bottom-right-radius: 40%;
+                border-bottom-left-radius: 0%;
+                border-bottom-right-radius: 0%;
             }
     
             #letters {
                 position: absolute;
                 font-family: happy;
-                font-size: 22pt;
-                top: -15px;
+                font-size: 25pt;
+                top: -20px;
                 left: 80px;
                 color: white;
             }
@@ -153,7 +156,7 @@ body { font-family: sans-serif; }
             }
     
             .navbuttons {
-                position: absolute;
+                position: fixed;
                 border-radius: 5px;
                 color: black;
                 border-bottom: 1px solid gray;
@@ -176,7 +179,7 @@ body { font-family: sans-serif; }
                 }
     
             #search {
-                position: absolute;
+                position: fixed;
                 top: 8.5%;
                 left: 80%;
                 float: right;
@@ -192,6 +195,8 @@ body { font-family: sans-serif; }
     
     
             .subnav {
+              position:fixed;
+              z-index:16;
                 background-color: white;
                 height: 12vh;
             }
@@ -484,35 +489,37 @@ body {
         </style>
     </head>
 <body>
-    <div class="divOne">
-        <button class="btn2">Write a Letter</button>
-        <button class="btn2" style="left:88%">
-            Donate
-        </button>
+  <div class="divOne">
+    <button class="btn2" style="position: fixed;"><a href="Get Involved.html" style="color: white;">Write a Letter</a></button>
+    <button class="btn2" style="left:86.5%;position: fixed;">
+       <a href="Get Involved.html" style="color: white;">Donate</a>
+    </button>
 
-        <p id="letters">Letters for Change</p>
-        <img src="images\Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
-        <button class="navbuttons" style="left: 6%" ><a href="index.html">HOME</a></button>
-		<button class="navbuttons" style="left: 12%"><a href="AboutUs.html">ABOUT US</a></button>
-		<button class="navbuttons" style="left: 21%"><a href="WorkFlow.html" class="active">OUR WORK</a></button>
-		<button class="navbuttons" style="left: 30%"><a href="Get Involved.html">GET INVOLVED</a></button>
-		<button class="navbuttons" style="left: 41%"><a href="Blog.html">MEDIA CENTRE</a></button>
-		<button class="navbuttons" style="left: 50%"><a href="FAQs.html">FAQ</a></button>
-		<button class="navbuttons" style="left: 58%"><a href="ContactUs.html">CONTACT US</a></button>
+    <p id="letters" style="position: fixed;">Letters for Change</p>
+    <img src="images\Logo.png" align="left" style="position:fixed;top:0;left:0;width:80px;height:110px" />
 
-        <input class="input-field"
-               type="text"
-               id="search"
-               placeholder="Search..">
+    <button class="navbuttons" style="left: 6%"><a href="index.html" >HOME</a></button>
+    <button class="navbuttons" style="left: 13%"><a href="AboutUs.html">ABOUT US</a></button>
+    <button class="navbuttons" style="left: 21%"><a href="WorkFlow.html" class="active">OUR WORK</a></button>
+    <button class="navbuttons" style="left: 30%"><a href="Get Involved.html">GET INVOLVED</a></button>
+    <button class="navbuttons" style="left: 41%"><a href="Blog.html">MEDIA CENTRE</a></button>
+    <button class="navbuttons" style="left: 50%"><a href="FAQs.html">FAQ</a></button>
+    <button class="navbuttons" style="left: 58%"><a href="ContactUs.html">CONTACT US</a></button>
+
+    <input class="input-field"
+           type="text"
+           id="search"
+           placeholder="Search.." style="position: fixed;"><br />
+</div>
        <!--- <p class="top-right">Letters Received-206</p> -->
-    </div>
+    
     <div class="subnav">
 
         <button id="whitebutton" style="border-bottom-left-radius:10px;"><a href="WorkFlow.html">Work Flow</a></button>
         <button id="whitebutton" style="left:505px;background:#ffa31a"><a href="OurWork_Letters.html" style="color:white">Letters for Change</a></button>
         <button id="whitebutton" style="left:1010px;border-bottom-right-radius:10px;"><a href="OurWork_BringingChange.html" >Bringing Change</a></button>
     </div>
-    <div class="card-carousel" style="background:url('images/letterbutter.png');background-size: cover;">
+    <div class="card-carousel" style="background:url('images/letterbutter.png');background-size: cover;padding-top:185px;">
         <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
             <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
             Letters Let Us Let Ours
@@ -762,8 +769,8 @@ body {
 
 <div style="height:6vh">
 
-<button class="btn2" style="left:38%;top:184rem;width:180px">Write a Letter</button>
-<button class="btn2" style="left:52%;top:184rem;width:180px">Donate</button>
+<button class="btn2" style="left:38%;top:184rem;width:180px"><a href="Get Involved.html" style="color:white">Write a Letter</a></button>
+<button class="btn2" style="left:52%;top:184rem;width:180px"><a href="Get Involved.html" style="color:white">Donate</a></button>
 
 </div>
 
@@ -839,10 +846,10 @@ body {
     </p>
 
 
-    <p style="position:absolute;left:135px;top:206rem;color:white;font-size:14px">
+    <p style="position:absolute;left:135px;top:206rem;color:white;font-size:20px">
         Address-
     </p>
-    <p style="position:absolute;left:135px;top:208rem;color:orange;font-size:14px">
+    <p style="position:absolute;left:135px;top:208rem;color:orange;font-size:18px">
       PO Box 9075</br>Goregaon(E) PO,</br>Mumbai - 400063</br>INDIA
     </p>
 
@@ -854,19 +861,19 @@ body {
            type="text"
            id="Name"
            placeholder="Name"
-           style="position:absolute;right:200px;top:195rem;width:250px;border-radius: 5px;">
+           style="position:absolute;right:200px;top:195rem;width:250px;border-radius: 15px;">
 
     <input class="input-field"
            type="text"
            id="Contact"
            placeholder="Contact"
-           style="position:absolute;right:200px;top:200rem;width:250px;border-radius: 5px;">
+           style="position:absolute;right:200px;top:200rem;width:250px;border-radius: 15px;">
 
     <input class="input-field"
            type="text"
            id="MailID"
            placeholder="error@mail.com"
-           style="position:absolute;right:200px;top:205rem;width:250px;border-radius: 5px;">
+           style="position:absolute;right:200px;top:205rem;width:250px;border-radius: 15px;">
 
     <button class="btn2" style="right:150px;top:210rem;background-color:orange">
         Send
@@ -875,8 +882,10 @@ body {
 
 </div>
 <div style="height:15vh;">
+  <a href="AboutUs.html">
 <h4 style="font-family:cheer;color:#730099;position:absolute;left:600px;top:224rem;">An Initiative by</h4>
 <img src="images/Complete mmf logo.jpg"  style="position:absolute;width:18%;height:6%;top:224rem;left:756px;"/>
+</a>
 </div>
 
 
