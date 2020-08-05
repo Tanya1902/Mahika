@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        @font-face {
+            font-family: happy;
+            src: url('fonts/My Happy Ending - TTF.TTF');
+        }
+
+        @font-face {
+            font-family: cheer;
+            src: url('fonts/Cheeronsta Regular.otf');
+        }
+
+        @font-face {
+            font-family: blog;
+            src: url('fonts/BloggerSans.ttf');
+        }
+
+        .carousel-inner {
+            width: 1520px;
+            height: 700px;
+        }
+
+        .carousel-item {
+            width: 1520px;
+            height: 700px;
+        }
+
+        .btn {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #ffad33;
+            color: white;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .btn:hover {
+                background-color: #ff9933;
+                color: white;
+            }
+
+        .btn2 {
+            position: absolute;
+            background-color: MediumSeaGreen;
+            border-radius: 5px;
+            color: white;
+            font-size: 10px;
+            top: 1.5%;
+            left: 72%;
+            width: 100px;
+            border: none;
+            height: 32px;
+            font-size: 20px;
+            font-family: Comic Sans MS;
+            text-align: center;
+        }
+
+
+            .btn2:hover {
+                background-color: #39ac6d;
+            }
+
+
+        .top-right {
+            position: absolute;
+            font-family: Comic Sans MS;
+            font-size: 105%;
+            top: 60px;
+            right: 0px;
+            color: white;
+            background-color: #7b1e5e;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .divOne {
+            height: 10px;
+            border-bottom: 15px solid white;
+            text-align: left;
+            background-color: #7b1e5e;
+            padding: 26px 40px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: #b8b894 5px 5px 10px;
+        }
+
+
+        @font-face {
+            font-family: happy;
+            src: url('fonts/My Happy Ending - TTF.TTF');
+        }
+
+
+        #letters {
+            position: absolute;
+            font-family: cheer;
+            font-size: 15pt;
+            top: 14px;
+            left: 90px;
+            color: white;
+        }
+
+        #text {
+            position: absolute;
+            left: 100px;
+            top: 155vh;
+            font-family: Comic Sans MS;
+            font-size: 130%;
+            color: black;
+        }
+
+        .navbuttons {
+            position: absolute;
+            border-radius: 5px;
+            color: black;
+            border-bottom: 1px solid gray;
+            background-color: white;
+            font-size: 10px;
+            top: 8.5%;
+            left: 10%;
+            width: 130px;
+            border: none;
+            height: 34px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+            .navbuttons:current {
+                color: #ffa31a;
+            }
+
+        #search {
+            position: absolute;
+            top: 8.5%;
+            left: 80%;
+            float: right;
+            border: 1.5px solid #ffad33;
+            border-radius: 25px;
+            background: url() no-repeat scroll 7px 7px;
+            padding-left: 30px;
+            background-image: url("https://icon-library.com/images/search-icon-html/search-icon-html-6.jpg");
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            background-position: 2px 1px 2px;
+        }
+
+        .write {
+            height: 80vh;
+            background: linear-gradient(120deg,#ffeaba,#ffd685,#bdbec9,#6ebae6);
+            background-size: cover,cover;
+            margin-bottom: 60px;
+        }
+
+        .MMF {
+            height: 128vh;
+            background: url('images/MMF.png') left top no-repeat,white;
+            background-size: 240vh;
+        }
+
+        .share {
+            background-color: white;
+            height: 37vh;
+        }
+
+        .contact {
+            height: 62vh;
+            background: url('images/Footer.png') left top no-repeat, #ac3973;
+            background-size: contain;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #ffa31a;
+                text-decoration: none;
+            }
+
+        .active {
+            color: #ffa31a !important
+        }
+    </style>
+</head>
+<body>
+    <div class="divOne">
+        <button class="btn2">Letter</button>
+        <button class="btn2" style="left:82%">
+            Donate
+        </button>
+
+
+        <p id="letters">Letters for Change</p>
+        <img src="images/Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
+        <button class="navbuttons" style="left: 4%"><a href="index.html">HOME</a></button>
+        <button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
+        <button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
+        <button class="navbuttons" style="left: 25%"><a href="Get Involved.html" class="active">GET INVOLVED</a></button>
+        <button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
+        <button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
+        <button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
+
+        <input class="input-field"
+               type="text"
+               id="search"
+               placeholder="Search..">
+    </div>
+
+
+
+
+
+    <!--Write a letter-->
+
+    <div class="write">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--SHARE-->
+    <div class="share">
+
+        <hr style="position:absolute;width:100%;height:1px;color:orange;background-color:#ffb84d" />
+        <h5 style="font-family:Comic sans MS;position:relative;left:695px;top:5vh"><i>Share this page</i></h5>
+        <a href="https://twitter.com/lfc_mmf">
+            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:relative;width:30px;height:30px;left:710px;top:6vh " />
+        </a>
+
+        <a href="https://instagram.com/lfc_mmf?igshid=jywrr2ebbvm">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:relative;width:28px;height:28px;left:720px;top:6vh;" />
+        </a>
+
+        <a href="https://facebook.com">
+            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:relative;width:30px;height:30px;left:730px;top:6vh;" />
+        </a>
+
+        <hr style="position:relative;width:100%;height:0.9px;top:10vh;color:orange;background-color:#ffb84d" />
+
+        <button class="btn2" style="position:relative;left:580px;top:12vh;width:180px">Write a Letter</button>
+        <button class="btn2" style="position:relative;left:620px;top:12vh;width:180px">Donate</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--CONTACT US FOOTER-->
+
+    <div class="contact">
+        <p style="position:absolute;left:135px;top:316vh;color:white;font-size:18px">
+            About us
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:135px" />
+        <p style="position:absolute;top:324vh;color:white;left:135px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+
+
+        <p style="position:absolute;left:350px;top:316vh;color:white;font-size:18px">
+            Our Work
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:350px" />
+        <p style="position:absolute;top:324vh;color:white;left:350px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+        <p style="position:absolute;left:575px;top:316vh;color:white;font-size:18px">
+            Get Involved
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:575px" />
+        <p style="position:absolute;top:324vh;color:white;left:575px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+        <p style="position:absolute;left:795px;top:316vh;color:white;font-size:18px">
+            Media Centre
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:795px" />
+        <p style="position:absolute;top:324vh;color:white;left:795px">
+            sample1
+            <br />
+            sample2
+            <br />
+            sample3
+
+        </p>
+
+
+        <p style="position:absolute;left:135px;top:345vh;color:white;font-size:14px">
+            Address-
+        </p>
+        <p style="position:absolute;left:135px;top:350vh;color:orange;font-size:14px">
+            TO BE FILLED
+        </p>
+
+        <p style="position:absolute;right:350px;top:316vh;color:orange;font-size:18px">
+            Contact Us
+        </p>
+
+        <input class="input-field"
+               type="text"
+               id="Name"
+               placeholder="Name"
+               style="position:absolute;right:200px;top:322vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="Contact"
+               placeholder="Contact"
+               style="position:absolute;right:200px;top:330vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="MailID"
+               placeholder="error@mail.com"
+               style="position:absolute;right:200px;top:338vh;width:250px;border-radius: 15px;">
+
+        <button class="btn2" style="left:80%;top:348vh;background-color:orange">
+            Send
+        </button>
+
+    </div>
+
+
+
+
+
+</body>
+</html>
+
