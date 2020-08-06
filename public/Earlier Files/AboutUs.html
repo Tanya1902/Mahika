@@ -287,7 +287,7 @@
   .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
     position: absolute;
     top: 0;
-    right: -33.3333%;
+    right: -25%;
     z-index: -1;
     display: block;
     visibility: visible;
@@ -328,7 +328,7 @@
 
 .card{
     margin-top:120px;
-    width:450px;
+    width:200px;
     height:610px;
     
 }
@@ -727,10 +727,10 @@
         $("#myCarousel").on("slide.bs.carousel", function(e) {
           var $e = $(e.relatedTarget);
           var idx = $e.index();
-          var itemsPerSlide = 4;
+          var itemsPerSlide = 5;
           var totalItems = $(".carousel-item").length;
       
-          if (idx >= totalItems - (itemsPerSlide - 1)) {
+          if (idx >= totalItems - (itemsPerSlide -1)) {
             var it = itemsPerSlide - (totalItems - idx);
             for (var i = 0; i < it; i++) {
               // append slides to end
