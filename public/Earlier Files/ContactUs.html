@@ -15,6 +15,10 @@
             font-family: blog;
             src: url('fonts/BloggerSans.ttf');
         }
+        @font-face {
+            font-family: happy;
+            src: url('fonts/My Happy Ending - TTF.ttf');
+        }
 
 
         .btn {
@@ -45,11 +49,11 @@
             color: white;
             font-size: 10px;
             top: 1.5%;
-            left: 72%;
-            width: 100px;
+            left: 75%;
+            width: 150px;
             border: none;
             height: 32px;
-            font-size: 20px;
+            font-size: 15px;
             font-family: Comic Sans MS;
             text-align: center;
         }
@@ -75,6 +79,9 @@
         }
 
         .divOne {
+            position:fixed;
+            z-index:16;
+            width:100%;
             height: 80px;
             border-bottom: 50px solid white;
             text-align: left;
@@ -87,9 +94,9 @@
 
         #letters {
             position: absolute;
-            font-family: cheer;
-            font-size: 15pt;
-            top: 0px;
+            font-family: happy;
+            font-size: 25pt;
+            top: -25px;
             left: 90px;
             color: white;
         }
@@ -111,7 +118,7 @@
         }
 
         .navbuttons {
-            position: absolute;
+            position: fixed;
             border-radius: 5px;
             color: black;
             border-color: white;
@@ -133,7 +140,7 @@
             }
 
         #search {
-            position: absolute;
+            position: fixed;
             top: 8.5%;
             left: 80%;
             float: right;
@@ -234,32 +241,31 @@
 
 <body>
     <div class="divOne">
-        <button class="btn2">Letter</button>
-        <button class="btn2" style="left:82%">
-            Donate
+        <button class="btn2" style="position: fixed;"><a href="Get Involved.html" style="color: white;">Write a Letter</a></button>
+        <button class="btn2" style="left:86.5%;position: fixed;">
+           <a href="Get Involved.html" style="color: white;">Donate</a>
         </button>
 
-        <p id="letters">Letters for Change</p>
+        <p id="letters" style="position: fixed;">Letters for Change</p>
+        <img src="images\Logo.png" align="left" style="position:fixed;top:0;left:0;width:80px;height:110px" />
 
-        <img src="images/Logo.png" align="left" style="position:absolute;top:0;left:0;width:75px;height:100px" />
-        <button class="navbuttons" style="left: 4%" ><a href="index.html">HOME</a></button>
-		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
-		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
-		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html">GET INVOLVED</a></button>
-		<button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
-		<button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
-		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html" class="active">CONTACT US</a></button>
+        <button class="navbuttons" style="left: 6%"><a href="index.html" >HOME</a></button>
+        <button class="navbuttons" style="left: 13%"><a href="AboutUs.html">ABOUT US</a></button>
+        <button class="navbuttons" style="left: 21%"><a href="WorkFlow.html">OUR WORK</a></button>
+        <button class="navbuttons" style="left: 30%"><a href="Get Involved.html">GET INVOLVED</a></button>
+        <button class="navbuttons" style="left: 41%"><a href="Blog.html">MEDIA CENTRE</a></button>
+        <button class="navbuttons" style="left: 50%"><a href="FAQs.html">FAQ</a></button>
+        <button class="navbuttons" style="left: 58%"><a href="ContactUs.html" class="active">CONTACT US</a></button>
 
         <input class="input-field"
                type="text"
                id="search"
-               placeholder="Search..">
-        <p class="top-right">Letters Received-206</p>
+               placeholder="Search.." style="position: fixed;"><br />
     </div>
 
 
 
-
+<div style="padding-top:100px">
     <!--CONTACTS-->
     <div class="ContactUs">
         <div id="shadow-text" style="top:35vh;left:120px;width:360px;height:260px;padding-left:30px;padding-top:50px;font-family:blog">
@@ -282,10 +288,10 @@
                 PO Box 9075,
                 <br />
                 Goregaon (E) PO,
-                Mumbai – 400063
+                Mumbai ï¿½ 400063
               </big></b>
             <br />
-            <h6 style="color:#ccccb3;padding-left:140px;padding-top:15px"> We’re just a letter away.</h6>
+            <h6 style="color:#ccccb3;padding-left:140px;padding-top:15px"> Weï¿½re just a letter away.</h6>
 
         </div>
 
@@ -369,7 +375,7 @@
             If you are troubled by anything around you, if there is anything you see that needs
             improvement, if you want to bring about change, just pick up the pencil and get started. It is
             as simple as writing a letter. Actually, it is just that! Write a letter about what it is that is
-            bothering you, and if you also have a solution, that’s even better!
+            bothering you, and if you also have a solution, thatï¿½s even better!
             <br />
             Post it on the aforementioned address or send us a picture on WhatsApp (+91 8928199682)
             and we will make sure that your voice is heard!
@@ -434,11 +440,11 @@
 
         <hr style="position:absolute;width:9%;height:1px;top:338vh;color:white;background-color:white;left:135px" />
         <p style="position:absolute;top:342vh;color:white;left:135px">
-            sample1
+            <a href="AboutUs.html" style="color:white;">Meet the Founder</a>
             <br />
-            sample2
+           <a href="AboutUs.html" style="color:white;"> Meet the Team</a>
             <br />
-            sample3
+            <a href="AboutUs.html" style="color:white;">Meet the Initial Contributors</a>
 
         </p>
 
@@ -450,11 +456,11 @@
 
         <hr style="position:absolute;width:9%;height:1px;top:338vh;color:white;background-color:white;left:350px" />
         <p style="position:absolute;top:342vh;color:white;left:350px">
-            sample1
+            <a href="WorkFlow.html"style="color:white;" > Work Flow</a>
             <br />
-            sample2
+            <a href="OurWork_Letters.html" style="color:white;"> Letters for Change</a>
             <br />
-            sample3
+            <a href="OurWork_BringingChange.html" style="color:white;"> Bringing the Change</a>
 
         </p>
 
@@ -464,11 +470,13 @@
 
         <hr style="position:absolute;width:9%;height:1px;top:338vh;color:white;background-color:white;left:575px" />
         <p style="position:absolute;top:342vh;color:white;left:575px">
-            sample1
+            <a href="Get Involved.html" style="color:white">Donate</a>
             <br />
-            sample2
+            <a href="Volunteer.html" style="color:white">Volunteer</a>
             <br />
-            sample3
+            <a href="Intern.html" style="color:white;">Intern</a>
+            <br />
+            <a href="Get Involved.html" style="color:white;">Partner With Us</a>
 
         </p>
 
@@ -478,20 +486,20 @@
 
         <hr style="position:absolute;width:9%;height:1px;top:338vh;color:white;background-color:white;left:795px" />
         <p style="position:absolute;top:342vh;color:white;left:795px">
-            sample1
+            <a href="Blog.html" style="color:white">News</a>
             <br />
-            sample2
+            <a href="Blog.html" style="color:white">Blogs</a>
             <br />
-            sample3
+            <a href="Blog.html" style="color:white">Gallery</a>
 
         </p>
 
 
-        <p style="position:absolute;left:135px;top:370vh;color:white;font-size:14px">
+        <p style="position:absolute;left:135px;top:365vh;color:white;font-size:20px">
             Address-
         </p>
-        <p style="position:absolute;left:135px;top:374vh;color:orange;font-size:14px">
-            TO BE FILLED
+        <p style="position:absolute;left:135px;top:369vh;color:orange;font-size:18px">
+            PO Box 9075</br>Goregaon(E) PO,</br>Mumbai - 400063</br>INDIA
         </p>
 
         <p style="position:absolute;right:350px;top:334vh;color:orange;font-size:18px">
@@ -516,11 +524,20 @@
                placeholder="error@mail.com"
                style="position:absolute;right:200px;top:358vh;width:250px;border-radius: 15px;">
 
-        <button class="btn2" style="left:80%;top:368vh;background-color:orange">
+        <button class="btn2" style="left:75%;top:368vh;background-color:orange">
             Send
         </button>
 
 
+    </div>
+    <div style="height:10vh;">
+        <a href="AboutUs.html">
+        <h4 style="font-family:cheer;color:#730099;position:absolute;left:510px;top:400vh;">An Initiative by</h4>
+
+
+        <img src="images/Complete mmf logo.jpg"  style="position:absolute;width:20%;height:9%;top:398vh;left:700px;"/>
+
+</a>
     </div>
 </body>
 </html>

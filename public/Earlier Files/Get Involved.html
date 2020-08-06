@@ -7,8 +7,18 @@
     <style>
 
         @font-face {
+            font-family: happy;
+            src: url('fonts/My Happy Ending - TTF.TTF');
+        }
+
+        @font-face {
             font-family: cheer;
             src: url('fonts/Cheeronsta Regular.otf');
+        }
+
+        @font-face {
+            font-family: blog;
+            src: url('fonts/BloggerSans.ttf');
         }
 
         .carousel-inner {
@@ -98,9 +108,9 @@
 
         #letters {
             position: absolute;
-            font-family: cheer;
-            font-size: 15pt;
-            top: 14px;
+            font-family: happy;
+            font-size: 25pt;
+            top: 10px;
             left: 90px;
             color: white;
         }
@@ -108,7 +118,7 @@
         #text {
             position: absolute;
             left: 100px;
-            top: 180%;
+            top: 155vh;
             font-family: Comic Sans MS;
             font-size: 130%;
             color: black;
@@ -152,56 +162,18 @@
             background-position: 2px 1px 2px;
         }
 
-
-        .subnav {
-            background-color: white;
-            height: 6.5vh;
-        }
-
-        #whitebutton {
-            position: absolute;
-            top: 100px;
-            left: 2px;
-            background-color: white;
-            color: #7b1e5e;
-            font-size: 14px;
-            padding: 5px;
-            text-align: center;
-            width: 380px;
-            height: 45px;
-            border: none;
-            border-bottom: 1px solid grey;
-            box-shadow: grey 1px 2px 10px;
-        }
-
-            #whitebutton:current {
-                background-color: #ffc34d;
-                color: white;
-            }
-
-        .Blog{
-            height: 172vh;
+        .getinvolved {
+            height: 145vh;
             background-color: floralwhite;
-            background: url('images/WorkFlow.png') top left no-repeat;
-            background-size: cover;
+            background: url('images/WorkFlow.png') top left no-repeat,linear-gradient(120deg,white,#ffe066,#ff9999,#ff9999);
+            background-size: cover,cover;
+            margin-bottom:60px;
         }
 
-        #shadow-text {
-            position: absolute;
-            height: 67vh;
-            width: 540px;
-            box-shadow: 2px 1px 5px 2px grey;
-            left: 200px;
-            top: 145vh;
-            border-radius: 10px;
-            background-color: white;
-        }
-
-        .form {
-            height: 85vh;
-            width:1200px;
-            background: #e6f7ff;
-            border-radius: 10px;
+        .MMF {
+            height: 128vh;
+            background: url('images/MMF.png') left top no-repeat,white;
+            background-size: 240vh;
         }
 
         .share {
@@ -240,8 +212,8 @@
         <button class="navbuttons" style="left: 4%" ><a href="index.html">HOME</a></button>
 		<button class="navbuttons" style="left: 10%"><a href="AboutUs.html">ABOUT US</a></button>
 		<button class="navbuttons" style="left: 17%"><a href="WorkFlow.html">OUR WORK</a></button>
-		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html">GET INVOLVED</a></button>
-		<button class="navbuttons" style="left: 35%"><a href="Blog.html" class="active">MEDIA CENTRE</a></button>
+		<button class="navbuttons" style="left: 25%"><a href="Get Involved.html" class="active">GET INVOLVED</a></button>
+		<button class="navbuttons" style="left: 35%"><a href="Blog.html">MEDIA CENTRE</a></button>
 		<button class="navbuttons" style="left: 43%"><a href="FAQs.html">FAQ</a></button>
 		<button class="navbuttons" style="left: 49%"><a href="ContactUs.html">CONTACT US</a></button>
 
@@ -254,13 +226,12 @@
 
 
 
-    <div class="subnav">
 
-        <button id="whitebutton" style="border-bottom-left-radius:10px;"><a href="">News</a></button>
-        <button id="whitebutton" style="left:380px;background:#ffa31a"><a href="Blog.html" style="color:white;">Blog</a></button>
-        <button id="whitebutton" style="left:760px;border-bottom-right-radius:10px;"><a href="">Gallery</a></button>
-        <button id="whitebutton" style="left:1140px;border-bottom-right-radius:10px;"><a href="">Social Media</a></button>
-    </div>
+
+
+
+    <!--CAROUSEL-->
+
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -315,36 +286,80 @@
 
 
 
-    <div class="Blog">
-        <div id="shadow-text" style="padding:10px;">
-            <img src="images\Dushyant 2.jpg" style="position:relative;top:20px;right:20px;float:right;width:100px;height:100px;border-radius:50%;" />
-            <h3 style="position:relative;left:10px;top:6vh;padding:10px;">Title Of Blog</h3>
-            <textarea style="position:relative;left:10px;top:6vh;border:none;" rows="13" cols="50">HELLOoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</textarea>
+
+
+
+
+
+
+
+
+
+    <!--GET INVOLVED-->
+
+    <div class="getinvolved" style="border-bottom-left-radius:5%;border-bottom-right-radius:5%;box-shadow: 5px 1px 20px 3px pink">
+        <h2 style="position:absolute;font-family:cheer;color:#7b1e5e;left:100px;top:140vh;">Get Involved</h2>
+        <h4 id="text" style="top:150vh;font-family:blog;font-size:19pt"><b>Become part of the long-term solution</b></h4>
+        <p id="text" style="margin-right:30px;font-family:blog;font-size:18pt">
+            All gals and guys,each one of you has the potential to make a change in the world.The action you take make a loud statement.What are you waiting for?
+
+        </p>
+
+
+
+        <div class="w3-container">
+            <div class="w3-card-4" style="position:absolute;top:175vh;left:100px;width:320px;height:470px;background-color:white;border-radius:20px;">
+                <img src="images\change.jpg" alt="5.jpeg" style="width:320px;height:260px;border-top-left-radius:20px;border-top-right-radius:20px">
+                <div class="w3-container w3-center">
+                    <h5 style="color:mediumaquamarine;margin:10px">Connect</h5>
+                    <h7 style="margin-left:10px;margin-right:10px;padding-bottom:5px"><b>Membership</b></h7>
+                    <p style="margin-left:10px;margin-right:10px">
+                        Become a Mahika Mishra Foundation member and change Champion
+                </div>
+            </div>
         </div>
 
-        <div id="shadow-text" style="left:830px">
-            <img src="images\Dushyant 2.jpg" style="position:relative;top:20px;right:20px;float:right;width:100px;height:100px;border-radius:50%;" />
-            <h3 style="position:relative;left:40px;top:8vh;padding:10px;">Title Of Blog</h3>
-            <textarea style="position:relative;left:40px;top:6vh;border:none;" rows="13" cols="50"> HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</textarea>
+        <div class="w3-container">
+            <div class="w3-card-4" style="position:absolute;top:175vh;left:460px;width:320px;height:470px;background-color:white;border-radius:20px;">
+                <img src="images\change.jpg" alt="5.jpeg" style="width:320px;height:260px;border-top-left-radius:20px;border-top-right-radius:20px">
+                <div class="w3-container w3-center">
+                    <h5 style="color:mediumaquamarine;margin:15px">Volunteer/Intern</h5>
+
+                    <h7 style="margin-left:15px;margin-right:15px;"><b>Act as if what you do makes a &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  difference. It does.</b></h7>
+                    <p style="margin-left:15px;margin-right:15px;font-size:14px">
+                        Welcome! Thanks for your interest in volunteering. Together, let�s make a difference in
+                        children�s lives!
+                    </p>
+                </div>
+            </div>
         </div>
 
-
-        <div class="form" style="position:absolute;top:225vh;left:180px;">
-
-            <input class="input-field"
-                   type="text"
-                   id="Name"
-                   placeholder="Name"
-                   style="position:relative;left:60px;top:10vh;width:1050px;height:40px;border-radius: 15px;border:1px solid grey;">
-
-            <input class="input-field"
-                   type="text"
-                   id="Email"
-                   placeholder="Email"
-                   style="position:relative;left:60px;top:15vh;width:1050px;height:40px;border-radius: 15px;border:1px solid grey;">
-
-            <textarea placeholder="Message" style="position:relative;left:60px;top:20vh;width:1050px;height:300px;border-radius: 15px;border:1px solid grey;"></textarea>
+        <div class="w3-container">
+            <div class="w3-card-4" style="position:absolute;top:175vh;left:800px;width:320px;height:470px;background-color:white;border-radius:20px;">
+                <img src="images\change.jpg" alt="5.jpeg" style="width:320px;height:260px;border-top-left-radius:20px;border-top-right-radius:20px">
+                <div class="w3-container w3-center">
+                    <h5 style="color:mediumaquamarine;margin:15px">Partnership</h5>
+                    <p style="margin-left:15px;margin-right:15px;font-size:14px">
+                        Children from everywhere deserve to have a platform to have their voices heard. If you want
+                        to support donate
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <div class="w3-container">
+            <div class="w3-card-4" style="position:absolute;top:175vh;left:1140px;width:320px;height:470px;background-color:white;border-radius:20px;">
+                <img src="images\change.jpg" alt="5.jpeg" style="width:320px;height:260px;border-top-left-radius:20px;border-top-right-radius:20px">
+                <div class="w3-container w3-center">
+                    <h5 style="color:mediumaquamarine;margin:15px">Support</h5>
+                    <h7 style="margin-left:15px;margin-right:15px;"><b>Donate online</b></h7>
+                    <p style="margin-left:15px;margin-right:15px;font-size:14px">
+                        Ask for donations instead of gifts for your birthday!
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -359,34 +374,40 @@
 
 
 
-    <!--SHARE THIS PAGE-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--SHARE-->
     <div class="share">
-        <hr style="position:absolute;width:100%;height:1px;top:323vh;color:orange;background-color:#ffb84d" />
-        <h5 style="font-family:Comic sans MS;position:absolute;left:688px;top:328vh;background-color:white"><i>Share this page</i></h5>
+
+        <hr style="position:absolute;width:100%;height:1px;color:orange;background-color:#ffb84d" />
+        <h5 style="font-family:Comic sans MS;position:relative;left:695px;top:5vh"><i>Share this page</i></h5>
         <a href="https://twitter.com/lfc_mmf">
-            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:30px;height:30px;left:700px;top:334vh " />
+            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:relative;width:30px;height:30px;left:710px;top:6vh " />
         </a>
 
         <a href="https://instagram.com/lfc_mmf?igshid=jywrr2ebbvm">
-            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:absolute;width:28px;height:28px;left:745px;top:334vh;" />
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:relative;width:28px;height:28px;left:720px;top:6vh;" />
         </a>
 
         <a href="https://facebook.com">
-            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:absolute;width:33px;height:33px;left:780px;top:334vh;" />
+            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:relative;width:30px;height:30px;left:730px;top:6vh;" />
         </a>
 
-        <hr style="position:absolute;width:100%;height:0.9px;top:339vh;color:orange;background-color:#ffb84d" />
-    </div>
+        <hr style="position:relative;width:100%;height:0.9px;top:10vh;color:orange;background-color:#ffb84d" />
 
-
-    <div style="background-color:white;height:28vh">
-
-        <button class="btn2" style="left:38%;top:346vh;width:180px">Write a Letter</button>
-        <button class="btn2" style="left:52%;top:346vh;width:180px">Donate</button>
+        <button class="btn2" style="position:relative;left:580px;top:12vh;width:180px">Write a Letter</button>
+        <button class="btn2" style="position:relative;left:620px;top:12vh;width:180px">Donate</button>
 
     </div>
-
-
 
 
 
@@ -400,12 +421,12 @@
     <!--CONTACT US FOOTER-->
 
     <div class="contact">
-        <p style="position:absolute;left:135px;top:366vh;color:white;font-size:18px">
+        <p style="position:absolute;left:135px;top:316vh;color:white;font-size:18px">
             About us
         </p>
 
-        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:135px" />
-        <p style="position:absolute;top:374vh;color:white;left:135px">
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:135px" />
+        <p style="position:absolute;top:324vh;color:white;left:135px">
             sample1
             <br />
             sample2
@@ -416,12 +437,12 @@
 
 
 
-        <p style="position:absolute;left:350px;top:366vh;color:white;font-size:18px">
+        <p style="position:absolute;left:350px;top:316vh;color:white;font-size:18px">
             Our Work
         </p>
 
-        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:350px" />
-        <p style="position:absolute;top:374vh;color:white;left:350px">
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:350px" />
+        <p style="position:absolute;top:324vh;color:white;left:350px">
             sample1
             <br />
             sample2
@@ -430,12 +451,12 @@
 
         </p>
 
-        <p style="position:absolute;left:575px;top:366vh;color:white;font-size:18px">
+        <p style="position:absolute;left:575px;top:316vh;color:white;font-size:18px">
             Get Involved
         </p>
 
-        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:575px" />
-        <p style="position:absolute;top:374vh;color:white;left:575px">
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:575px" />
+        <p style="position:absolute;top:324vh;color:white;left:575px">
             sample1
             <br />
             sample2
@@ -444,12 +465,12 @@
 
         </p>
 
-        <p style="position:absolute;left:795px;top:366vh;color:white;font-size:18px">
+        <p style="position:absolute;left:795px;top:316vh;color:white;font-size:18px">
             Media Centre
         </p>
 
-        <hr style="position:absolute;width:9%;height:1px;top:368vh;color:white;background-color:white;left:795px" />
-        <p style="position:absolute;top:374vh;color:white;left:795px">
+        <hr style="position:absolute;width:9%;height:1px;top:320vh;color:white;background-color:white;left:795px" />
+        <p style="position:absolute;top:324vh;color:white;left:795px">
             sample1
             <br />
             sample2
@@ -459,14 +480,14 @@
         </p>
 
 
-        <p style="position:absolute;left:135px;top:398vh;color:white;font-size:14px">
+        <p style="position:absolute;left:135px;top:345vh;color:white;font-size:14px">
             Address-
         </p>
-        <p style="position:absolute;left:135px;top:402vh;color:orange;font-size:14px">
+        <p style="position:absolute;left:135px;top:350vh;color:orange;font-size:14px">
             TO BE FILLED
         </p>
 
-        <p style="position:absolute;right:350px;top:366vh;color:orange;font-size:18px">
+        <p style="position:absolute;right:350px;top:316vh;color:orange;font-size:18px">
             Contact Us
         </p>
 
@@ -474,21 +495,21 @@
                type="text"
                id="Name"
                placeholder="Name"
-               style="position:absolute;right:200px;top:372vh;width:250px;border-radius: 15px;">
+               style="position:absolute;right:200px;top:322vh;width:250px;border-radius: 15px;">
 
         <input class="input-field"
                type="text"
                id="Contact"
                placeholder="Contact"
-               style="position:absolute;right:200px;top:380vh;width:250px;border-radius: 15px;">
+               style="position:absolute;right:200px;top:330vh;width:250px;border-radius: 15px;">
 
         <input class="input-field"
                type="text"
                id="MailID"
                placeholder="error@mail.com"
-               style="position:absolute;right:200px;top:388vh;width:250px;border-radius: 15px;">
+               style="position:absolute;right:200px;top:338vh;width:250px;border-radius: 15px;">
 
-        <button class="btn2" style="left:80%;top:398vh;background-color:orange">
+        <button class="btn2" style="left:80%;top:348vh;background-color:orange">
             Send
         </button>
 
@@ -496,8 +517,11 @@
 
 
 
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>
+

@@ -1,0 +1,893 @@
+<html>
+    <head>
+        <title>Letters For Change</title>
+        
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+<style>
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: none;
+  
+  
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 450px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow:rgba(0, 0, 0, 0.2);
+}
+
+.carousel-cell.is-selected {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+</style>
+
+
+
+<style>
+            @font-face {
+                font-family: happy;
+                src: url('fonts/My Happy Ending - TTF.ttf');
+            }
+    
+            @font-face {
+                font-family: cheer;
+                src: url('fonts/Cheeronsta Regular.otf');
+            }
+    
+            @font-face {
+                font-family: blog;
+                src: url('fonts/BloggerSans.ttf');
+            }
+    
+            .btn {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #ffad33;
+                color: white;
+                font-size: 16px;
+                padding: 16px 30px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+            }
+    
+                .btn:hover {
+                    background-color: #ff9933;
+                    color: white;
+                }
+    
+            .btn2 {
+                position: absolute;
+                background-color: MediumSeaGreen;
+                border-radius: 5px;
+                color: white;
+                font-size: 10px;
+                top: 1.5%;
+                left: 75%;
+                width: 150px;
+                border: none;
+                height: 32px;
+                font-size: 16px;
+                font-family: Comic Sans MS;
+                text-align: center;
+            }
+    
+    
+                .btn2:hover {
+                    background-color: #39ac6d;
+                }
+    
+    
+            .top-right {
+                position: absolute;
+                font-family: Comic Sans MS;
+                font-size: 105%;
+                top: 150px;
+                right: 0px;
+                color: white;
+                background-color: #7b1e5e;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+            }
+    
+            .divOne {
+              position:fixed;
+              z-index:16;
+              width: 100%;
+                height: 80px;
+                border-bottom: 50px solid white;
+                text-align: left;
+                background-color: #7b1e5e;
+                padding: 26px 40px;
+                border-bottom-left-radius: 0%;
+                border-bottom-right-radius: 0%;
+            }
+    
+            #letters {
+                position: absolute;
+                font-family: happy;
+                font-size: 25pt;
+                top: -20px;
+                left: 80px;
+                color: white;
+            }
+            
+    
+            #text {
+                position: absolute;
+                left: 100px;
+                top: 180%;
+                font-family: Comic Sans MS;
+                font-size: 130%;
+                color: black;
+            }
+    
+            .navbuttons {
+                position: fixed;
+                border-radius: 5px;
+                color: black;
+                border-bottom: 1px solid gray;
+                background-color: white;
+                font-size: 10px;
+                top: 8.5%;
+                left: 10%;
+                width: 130px;
+                border: none;
+                height: 34px;
+                font-size: 15px;
+                font-family: Comic Sans MS;
+                text-align: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+    
+                .navbuttons:current {
+                    color: #ffa31a;
+                }
+    
+            #search {
+                position: fixed;
+                top: 8.5%;
+                left: 80%;
+                float: right;
+                border: 1.5px solid #ffad33;
+                border-radius: 25px;
+                background: url() no-repeat scroll 7px 7px;
+                padding-left: 30px;
+                background-image: url("https://icon-library.com/images/search-icon-html/search-icon-html-6.jpg");
+                background-repeat: no-repeat;
+                background-size: 16px 16px;
+                background-position: 2px 1px 2px;
+            }
+    
+    
+            .subnav {
+              position:fixed;
+              z-index:16;
+                background-color: white;
+                height: 12vh;
+            }
+    
+            #whitebutton {
+                position: absolute;
+                top: 100px;
+                left: 2px;
+                background-color: white;
+                color: #7b1e5e;
+                font-size: 14px;
+                padding: 5px;
+                text-align: center;
+                width: 505px;
+                height: 45px;
+                border: none;
+                border-bottom: 1px solid grey;
+                box-shadow: #d6d6c2 5px 1px 10px;
+            }
+    
+                #whitebutton:current {
+                    background-color: #ffc34d;
+                    color: white;
+                }
+                .MMF {
+            background: url('images/Home_letters.png') left top no-repeat;
+            background-size: 205vh;
+            height: 22vh;
+        }
+            
+    
+            .contact {
+                height: 70vh;
+                background: url('images/Footer.png') left top no-repeat, #ac3973;
+                background-size: contain;
+            }
+    
+            .share {
+                height: 35vh;
+            }
+            a{
+                color:black;
+                text-decoration: none;
+            }
+            a:hover{
+                color:#ffa31a;
+                text-decoration:none;
+            }
+            .active{
+                color:#ffa31a !important 
+            }
+#searchlong{
+  border-radius:25px;
+  border:1px solid #D23F70;
+  
+  width:72%;
+  background-image: url("https://icon-library.com/images/search-icon-html/search-icon-html-6.jpg");
+                background-repeat: no-repeat;
+                background-size: 16px 16px;
+                background-position: 10px;
+                padding:5px 10px 5px 30px;
+}
+#upload{
+  color:white;
+  background:#D23F70;
+  BORDER:#D23F70;
+  border-radius:25px;
+  padding:5px 10px 5px 10px;
+  font-size:20px;
+  
+}
+#lang{
+  color:white;
+background:#ffad33;
+border:#F6C86A;
+font-size:20px;
+padding:5px 30px 5px 30px;
+border-radius:25px;
+position:absolute;
+top:55rem;
+left:800px;
+}
+#location{
+  COLOR:WHITE;
+  background:#ffad33;
+border:#F6C86A;
+font-size:20px;
+padding:5px 30px 5px 30px;
+border-radius:25px;
+position:absolute;
+top:55rem;
+left:1000px;
+}
+#themes{
+  color:white;
+  background:#ffad33;
+border:#F6C86A;
+font-size:20px;
+padding:5px 30px 5px 30px;
+border-radius:25px;
+position:absolute;
+top:55rem;
+left:1180px;
+}
+           
+
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  
+}
+
+.card-carousel .my-card {
+  height: 30rem;
+  width: 80rem;
+
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position:absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(175, 80, 80, 0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card:nth-child(0):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+  
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(5):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+#uploadit{
+  left:75%;
+  top:95.5%;
+  position:absolute;
+}
+@media(max-width:1440px){
+  .navbuttons{
+    position:absolute;
+    top:6%;
+  }
+  #search{
+    top:6.5%;
+  }
+  #uploadit{
+    top:49.5rem;
+  }
+}
+        </style>
+    </head>
+<body>
+  <div class="divOne">
+    <button class="btn2" style="position: fixed;"><a href="Get Involved.html" style="color: white;">Write a Letter</a></button>
+    <button class="btn2" style="left:86.5%;position: fixed;">
+       <a href="Get Involved.html" style="color: white;">Donate</a>
+    </button>
+
+    <p id="letters" style="position: fixed;">Letters for Change</p>
+    <img src="images\Logo.png" align="left" style="position:fixed;top:0;left:0;width:80px;height:110px" />
+
+    <button class="navbuttons" style="left: 6%"><a href="index.html" >HOME</a></button>
+    <button class="navbuttons" style="left: 13%"><a href="AboutUs.html">ABOUT US</a></button>
+    <button class="navbuttons" style="left: 21%"><a href="WorkFlow.html" class="active">OUR WORK</a></button>
+    <button class="navbuttons" style="left: 30%"><a href="Get Involved.html">GET INVOLVED</a></button>
+    <button class="navbuttons" style="left: 41%"><a href="Blog.html">MEDIA CENTRE</a></button>
+    <button class="navbuttons" style="left: 50%"><a href="FAQs.html">FAQ</a></button>
+    <button class="navbuttons" style="left: 58%"><a href="ContactUs.html">CONTACT US</a></button>
+
+    <input class="input-field"
+           type="text"
+           id="search"
+           placeholder="Search.." style="position: fixed;"><br />
+</div>
+       <!--- <p class="top-right">Letters Received-206</p> -->
+    
+    <div class="subnav">
+
+        <button id="whitebutton" style="border-bottom-left-radius:10px;"><a href="WorkFlow.html">Work Flow</a></button>
+        <button id="whitebutton" style="left:505px;background:#ffa31a"><a href="OurWork_Letters.html" style="color:white">Letters for Change</a></button>
+        <button id="whitebutton" style="left:1010px;border-bottom-right-radius:10px;"><a href="OurWork_BringingChange.html" >Bringing Change</a></button>
+    </div>
+    <div class="card-carousel" style="background:url('images/letterbutter.png');background-size: cover;padding-top:185px;">
+        <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+            <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+            Letters Let Us Let Ours
+        </div>
+        <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+            <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+            Letters Let Us Let Ours
+        </div>
+        <div class="my-card" id="showletters"  style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+            <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+            Letters Let Us Let Ours
+        </div>
+        <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+            <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+            Letters Let Us Let Ours
+        </div>
+        <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+            <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+            Letters Let Us Let Ours
+        </div>
+        
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> 
+      <script>
+      $num = $('.my-card').length;
+      $even = $num / 2;
+      $odd = ($num + 1) / 2;
+      
+      if ($num % 2 == 0) {
+        $('.my-card:nth-child(' + $even + ')').addClass('active');
+        $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+        $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+      } else {
+        $('.my-card:nth-child(' + $odd + ')').addClass('active');
+        $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+        $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+      }
+      
+      $('.my-card').click(function() {
+        $slide = $('.active').width();
+        console.log($('.active').position().left);
+        
+        if ($(this).hasClass('next')) {
+          $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+        } else if ($(this).hasClass('prev')) {
+          $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+        }
+        
+        $(this).removeClass('prev next');
+        $(this).siblings().removeClass('prev active next');
+        
+        $(this).addClass('active');
+        $(this).prev().addClass('prev');
+        $(this).next().addClass('next');
+      });
+      
+      
+      // Keyboard nav
+      $('html body').keydown(function(e) {
+        if (e.keyCode == 37) { // left
+          $('.active').prev().trigger('click');
+        }
+        else if (e.keyCode == 39) { // right
+          $('.active').next().trigger('click');
+        }
+      });
+      </script>
+      <script type="text/javascript">
+      
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      
+      </script>
+
+<div style="padding-left:120px;padding-top:90px;">
+<input class="input-field" type="text" id="searchlong" placeholder="Search Letters">
+     </div>
+     <div id="uploadit" >
+      <button  id="upload">Upload Letter</button>
+           </div>
+<h1 style="font-family:'Comic Sans MS';color:#994276;left:140px;position:absolute;top:54rem;">Letters</h1>
+
+          <button id="lang">Language</button>
+          <button id="location">Location</button>
+          <button id="themes">Themes</button>
+<h2 style="font-family:'Comic Sans MS';color:#000000;position:absolute;left:140px;top:60rem">Section</h2>
+
+          <div style="padding-top:200px;background:url('images/letterbutter.png');background-size: contain;">
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+</div>
+</div>
+
+
+<h2 style="font-family:'Comic Sans MS';color:#000000;position:absolute;left:140px;top:98rem">Section</h2>
+
+          <div style="padding-top:150px;background:url('images/letterbutter.png');background-size: contain;">
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+</div>
+</div>
+
+<h2 style="font-family:'Comic Sans MS';color:#000000;position:absolute;left:140px;top:136rem">Section</h2>
+
+          <div style="padding-top:150px;background:url('images/letterbutter.png');background-size: contain;">
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+  <div class="carousel-cell">
+    <h3 style="background:mediumseagreen;color:white;">Letters</h3>
+  </div>
+</div>
+</div>
+
+
+
+	<!--MMF-->
+  <div class="MMF">
+    <hr style="position:absolute;width:100%;height:1px;top:175rem;color:orange;background-color:#ffb84d" />
+    <h5 style="font-family:Comic sans MS;position:absolute;left:688px;top:176rem;"><i>Share this page</i></h5>
+
+    <a href="https://twitter.com/lfc_mmf">
+        <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:absolute;width:30px;height:30px;left:700px;top:179rem " />
+    </a>
+
+    <a href="https://instagram.com/lfc_mmf?igshid=jywrr2ebbvm">
+        <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:absolute;width:28px;height:28px;left:740px;top:179rem;" />
+    </a>
+
+    <a href="https://facebook.com">
+        <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:absolute;width:33px;height:33px;left:780px;top:179rem;" />
+    </a>
+
+    <hr style="position:absolute;width:100%;height:0.9px;top:181rem;color:orange;background-color:#ffb84d" />
+</div>
+
+
+<div style="height:6vh">
+
+<button class="btn2" style="left:38%;top:184rem;width:180px"><a href="Get Involved.html" style="color:white">Write a Letter</a></button>
+<button class="btn2" style="left:52%;top:184rem;width:180px"><a href="Get Involved.html" style="color:white">Donate</a></button>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--CONTACT US FOOTER-->
+
+<div class="contact" >
+    <p style="position:absolute;left:135px;top:190rem;color:white;font-size:18px">
+        About us
+    </p>
+
+    <hr style="position:absolute;width:9%;height:1px;top:192rem;color:white;background-color:white;left:135px" />
+    <p style="position:absolute;top:194rem;color:white;left:135px">
+      <a href="AboutUs.html" style="color:white;">Meet the Founder</a>
+      <br />
+     <a href="AboutUs.html" style="color:white;"> Meet the Team</a>
+      <br />
+      <a href="AboutUs.html" style="color:white;">Meet the Initial Contributors</a>
+
+    </p>
+
+
+
+    <p style="position:absolute;left:350px;top:190rem;color:white;font-size:18px">
+        Our Work
+    </p>
+
+    <hr style="position:absolute;width:9%;height:1px;top:192rem;color:white;background-color:white;left:350px" />
+    <p style="position:absolute;top:194rem;color:white;left:350px">
+      <a href="WorkFlow.html"style="color:white;" > Work Flow</a>
+      <br />
+      <a href="OurWork_Letters.html" style="color:white;"> Letters for Change</a>
+      <br />
+      <a href="OurWork_BringingChange.html" style="color:white;"> Bringing the Change</a>
+
+    </p>
+
+    <p style="position:absolute;left:575px;top:190rem;color:white;font-size:18px">
+        Get Involved
+    </p>
+
+    <hr style="position:absolute;width:9%;height:1px;top:192rem;color:white;background-color:white;left:575px" />
+    <p style="position:absolute;top:194rem;color:white;left:575px">
+      <a href="Get Involved.html" style="color:white">Donate</a>
+      <br />
+      <a href="Volunteer.html" style="color:white">Volunteer</a>
+      <br />
+      <a href="Intern.html" style="color:white;">Intern</a>
+      <br />
+      <a href="Get Involved.html" style="color:white;">Partner With Us</a>
+
+    </p>
+
+    <p style="position:absolute;left:795px;top:190rem;color:white;font-size:18px">
+        Media Centre
+    </p>
+
+    <hr style="position:absolute;width:9%;height:1px;top:192rem;color:white;background-color:white;left:795px" />
+    <p style="position:absolute;top:194rem;color:white;left:795px">
+      <a href="Blog.html" style="color:white">News</a>
+      <br />
+      <a href="Blog.html" style="color:white">Blogs</a>
+      <br />
+      <a href="Blog.html" style="color:white">Gallery</a>
+
+    </p>
+
+
+    <p style="position:absolute;left:135px;top:206rem;color:white;font-size:20px">
+        Address-
+    </p>
+    <p style="position:absolute;left:135px;top:208rem;color:orange;font-size:18px">
+      PO Box 9075</br>Goregaon(E) PO,</br>Mumbai - 400063</br>INDIA
+    </p>
+
+    <p style="position:absolute;right:350px;top:190rem;color:orange;font-size:18px">
+        Contact Us
+    </p>
+
+    <input class="input-field"
+           type="text"
+           id="Name"
+           placeholder="Name"
+           style="position:absolute;right:200px;top:195rem;width:250px;border-radius: 15px;">
+
+    <input class="input-field"
+           type="text"
+           id="Contact"
+           placeholder="Contact"
+           style="position:absolute;right:200px;top:200rem;width:250px;border-radius: 15px;">
+
+    <input class="input-field"
+           type="text"
+           id="MailID"
+           placeholder="error@mail.com"
+           style="position:absolute;right:200px;top:205rem;width:250px;border-radius: 15px;">
+
+    <button class="btn2" style="right:150px;top:210rem;background-color:orange">
+        Send
+    </button>
+
+
+</div>
+<div style="height:15vh;">
+  <a href="AboutUs.html">
+<h4 style="font-family:cheer;color:#730099;position:absolute;left:600px;top:224rem;">An Initiative by</h4>
+<img src="images/Complete mmf logo.jpg"  style="position:absolute;width:18%;height:6%;top:224rem;left:756px;"/>
+</a>
+</div>
+
+
+</body>
+</html>
