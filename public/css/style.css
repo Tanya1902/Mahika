@@ -350,7 +350,7 @@ a:hover,a:focus {
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
 
 .header_top {
-    min-height: 98px;
+    height: 78px;
     padding: 8px 0;
     background: #7b1e5e;
 	
@@ -506,6 +506,9 @@ a.navbar-brand {
     height: 60px;
     position: absolute;
     top: 0;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
 }
 
 .navbar-toggler {
@@ -738,7 +741,7 @@ a.navbar-brand {
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {
-    top: 400px;
+    top:400px;
 }
 
 .pogoSlider--dirCenterHorizontal .pogoSlider-dir-btn {
