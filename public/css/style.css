@@ -358,7 +358,7 @@ a:hover,a:focus {
 
 .site_information ul {
     float: right;
-    width:95%;
+    width:80%;
     padding: 21px 0;
 }
 
@@ -448,7 +448,8 @@ a.join_bt:focus {
     color: #000;
     position: relative;
     z-index: 2;
-	font-family:'Comic Sans MS';
+	font-family:'blog';
+	font-weight:600;
 }
 
 a.navbar-brand {
@@ -624,7 +625,6 @@ a.navbar-brand {
     background: #ff880e;
     left: -35px;
     transform: skew(30deg);
-
 }
 
 .main_bt {
@@ -751,6 +751,7 @@ a.navbar-brand {
 .img-responsive {
 	max-width: 100%;
 	height:300px;
+	border-radius:20px;
 }
 
 .slide_text h3 {
@@ -898,9 +899,11 @@ a.navbar-brand {
 }
 
 .about_bg {
-    background: url('../images/Meet the Founders.png') top left no-repeat,linear-gradient(315deg,#eaf818 0%,#f6fc9c 74%);
+    background: url('../images/Meet the Founders.png') top left no-repeat,linear-gradient(315deg,#f8cb36,#eaf73c, white);
 	background-size:contain,cover;
-	border-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,.2);
 }
 
 .about-img {
@@ -1785,7 +1788,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .menu_footer li a {
     font-family: 'blog', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -1825,9 +1828,10 @@ footer.footer-box h3 {
 }
 
 footer.footer-box h3 {
-    font-size: 30px;
-    border-bottom: solid #d66c0b 4px;
-    margin-bottom: 25px;
+    font-size: 25px;
+    border-bottom: solid white 4px;
+	margin-bottom: 25px;
+	font-weight:800;
 }
 
 
@@ -1894,12 +1898,13 @@ p {
 
 .text_align_left {
 	text-align: left;
+
 }
 
-
+/*
 .text_align_center {
 	text-align: center;
-}
+}*/
 
 .text_align_right {
 	text-align: right;
@@ -2039,7 +2044,7 @@ p.section_count {
     display: flex;
     margin-bottom: 45px;
     width: 100%;
-    justify-content: center;
+    
 }
 
 .theme_bg {
@@ -2340,31 +2345,34 @@ ul.bottom_menu li {
     background-size: cover;
     background-position: center center;
     min-height: 650px;
-    padding: 80px 0;
+	padding: 80px 0;
+	
 }
 
 .field input {
-    width: 100%;
-    background: #0e0606;
+    width: 90%;
+    
     min-height: 65px;
     border: none;
     margin: 15px 0;
-    color: #fff;
+    color: #000000;
     padding: 0 25px;
     font-size: 17px;
-    font-weight: 300;
+	font-weight: 700;
+	border-radius:15px;
 }
 
 .field textarea {
-    width: 100%;
-    background: #0e0606;
+    width: 90%;
+    
     min-height: 120px;
     border: none;
     margin: 15px 0;
-    color: #fff;
+    color: #000000;
     padding: 25px;
     font-size: 17px;
-    font-weight: 300;
+	font-weight: 700;
+	border-radius:15px;
 }
 
 .contact_form_inner button {
@@ -2372,10 +2380,13 @@ ul.bottom_menu li {
     height: 60px;
     border: none;
     font-size: 20px;
-    color: #050000;
+    color: WHITE;
     line-height: 62px;
     cursor: pointer;
-    transition: ease all 0.5s;
+	transition: ease all 0.5s;
+	border-radius:15px;
+	background:#219e3c;
+	font-weight:800;
 }
 
 
