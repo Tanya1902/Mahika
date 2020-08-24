@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Our Work- Bringing Change</title>
+    <title>Partner With Us</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,47 +30,52 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-   
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!--Share This-->
+  <!--
+    Share This
+-->
 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ef3a6c5a922da001296fc82&product=inline-share-buttons" async="async"></script>
-<!--Share This End-->
-<style>
-    @font-face{
-        font-family: varela;
-        src: url('fonts/Varela-Regular.ttf')
-    }
-    @font-face {
-            font-family: cheer;
-            src: url('fonts/Cheeronsta Regular.otf');
+<!--
+    Share This End
+-->
+    <style>
+        @font-face{
+            font-family: varela;
+            src: url('fonts/Varela-Regular.ttf')
         }
         @font-face {
-            font-family: blog;
-            src: url('fonts/BloggerSans.ttf');
-        } 
-        @font-face {
-            font-family: happy;
-            src: url('fonts/My Happy Ending - TTF.ttf');
-        }
-        #flow{
+                font-family: cheer;
+                src: url('fonts/Cheeronsta Regular.otf');
+            }
+            @font-face {
+                font-family: blog;
+                src: url('fonts/BloggerSans.ttf');
+            } 
+            @font-face {
+                font-family: happy;
+                src: url('fonts/My Happy Ending - TTF.ttf');
+            }
+            body{
+                background:url('images/Meet\ the\ Founders.png') repeat;
+            }
+            #flow{
                 padding-top:65px;
                 width:100%;
+                
+                
             }
+           
             .work{
                 padding:10px;
-                width:33%;
+                width:24.5%;
                 font-family: 'blog';
                 background:white;
                 box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
                 font-size:18px;
                 font-weight:650;
                 border:none;
-                cursor:pointer;
                 color:#994276;
+                cursor:pointer;
             }
             .active{
                 background:#ffbf0e;
@@ -82,7 +87,55 @@
             .active:hover{
                 color:white;
             }
-</style>
+            .imagetext{
+                font-size:14px;
+                font-weight:600;
+                position:absolute;
+                top:90%;
+                
+                font-family:'blog';
+                color:#050505;
+            }
+            
+            #partnerform input{
+                width:50%;
+                padding:10px 20px;
+                color:#000000;
+                font-family:'blog';
+                border:1px solid black;
+                border-radius:15px;
+                font-size:18px;
+            }
+            input::placeholder{
+                color:#000000;
+                font-weight:500;
+            }
+            #submit{
+                background:mediumseagreen;
+                padding:10px 40px;
+                color:white;
+                font-weight:800;
+                border:none;
+                border-radius:15px;
+                font-size:20px;
+            }
+            #partnerbutt{
+                padding:10px 40px;
+                width:35%;
+                margin-bottom:-80px;
+                border:none;
+                border-radius:25px;
+                background:linear-gradient(315deg,#420e1d,#c9185c);
+                color:white;
+                font-weight:800;
+                font-size:20px;
+                box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)
+            }
+            </style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
@@ -133,8 +186,8 @@
                                     <ul class="navbar-nav">
                                         <li><a class="nav-link" href="index.html">Home</a></li>
                                         <li><a class="nav-link" href="about.html">About Us</a></li>
-                                        <li><a class="nav-link active" href="WorkFlow.html">Our Work</a></li>
-                                        <li><a class="nav-link" href="GetInvolved.html">Get Involved</a></li>
+                                        <li><a class="nav-link" href="WorkFlow.html">Our Work</a></li>
+                                        <li><a class="nav-link active" href="GetInvolved.html">Get Involved</a></li>
                                         <li><a class="nav-link" href="news.html">Media Centre</a></li>
                                         <li><a class="nav-link" href="faq.html">FAQs</a></li>
                                         <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
@@ -158,101 +211,118 @@
     </header>
     <!-- End header -->
 
-    <div id="flow" align="center">
-        <a href="WorkFlow.html"> <button class="work">Work Flow</button></a>
-        <a href="LettersforChange.html"><button class="work">Letters For Change</button></a>
-        <a href="BringingChange.html"><button class="work active">Bringing Change</button></a>
-    </div>
     
-  
-    <!-- section -->
-    <div class="section layout_padding" style="background:url('images/Buterflies.png');background-size:120% 100%;">
+    <div id="flow" align="center">
+       <a href="Donate.html"> <button class="work">Donate</button></a>
+        <a href="volunteer.html"><button class="work">Volunteer</button></a>
+        <a href="intern.html"><button class="work">Intern</button></a>
+        <a href="PartnerWithUs.html"><button class="work active">Partner with us</button></a>
+    </div>
+
+
+    
+   
+
+    <div class="section layout_padding" >
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h3 style="font-family:'cheer';color:#994276;font-size:30pt;"><span class="theme_color"></span>Title</h3>    
+                           <h3 style="font-family:'cheer';color:#994276;font-size:30pt;"><span class="theme_color"></span>Partner with us</h3>    
+                        
                         </div>
+                        <p style="font-size:20pt;font-family:'blog';color:#000000;">
+                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consetetur sadipscing elitr,Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                           </p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="w3-container">
-                        <div class="w3-card-4" style="width:340px;height:500px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\change.jpg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    1. Encouraging young change-makers  to write letters with a single prompt:
-                                    "Write a letter on issues that you think will change your life."
-                                </p>
-                            </div>
-                        </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                   <img class="img-responsive" src="images/Work3.jpeg" alt="#" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                   <div class="imagetext" style="left:8%;">
+                       Write a letter about an issue that you care about.
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/Work2.jpeg" alt="#" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);"/>
+                    <div class="imagetext" style="left:14%;">
+                        Click a picture of the letter and send it to us.
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="w3-container">
-                        <div class="w3-card-4" style="width:340px;height:500px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\1.jpg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    2. Asking them to post their letters to us through WhatsApp on 9321654150.
-                                </p>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/Work1.jpeg" alt="#" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);" />
+                    <div class="imagetext" style="left:3%;">
+                        Search for your letter on this website, we have uploaded it!
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="w3-container">
-                        <div class="w3-card-4" style="width:340px;height:500px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\6.jpg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    3. Analysing their letters and delivering them to the right recipients.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+
+<!-- Start Banner --><div align="center"><button id="partnerbutt">Partner with Us</button></div>
+
+<div class="section inner_page_banner" style="width:80%;margin-left:10%;padding-bottom:40px;background:rgb(211, 238, 243);border-radius: 30px;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner_title" align="center">
+                    
+                     <form action="" method="post" align="center" id="partnerform">
+                         <input type="text" name="name" placeholder="Full Name"></br></br>
+                         <input type="email" name="email" placeholder="Email ID"></br></br>
+                         <input type="number" name="phone" placeholder="Phone Number"></br></br>
+                         <input type="text" name="message" placeholder="Message"></br></br>
+                         <button type="submit" id="submit">Submit</button>
+                     </form>   
                 </div>
             </div>
         </div>
     </div>
-    <!-- end ection -->
-    
-   
-    <!-- section -->
-    <div class="section layout_padding padding_top_0" style="background:url('images/Meet\ the\ Founders.png');padding-bottom:20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full"></br><hr width="100%" style="background:#ffbf0e;height:3px;">
-                        <div class="heading_main text_align_center">
-                            
-                           <h4 style="font-family:'cheer';color:#994276;padding-left:44%;">Follow us on</h4>
-                           
-                        </div>
-                        <!-- ShareThis BEGIN -->
-                        <div class="sharethis-inline-follow-buttons" ></div>
-                        <!-- ShareThis END -->
-                
-                        <hr width="100%" style="background:#ffbf0e;height:3px;">
-            
-                <div class="site_information" style="width:70%;">
-                    <ul>
-                <li><a class="join_bt" href="Donate.html">Donate</a></li>
-                            <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
-                            </ul>
-                            </div>
+</div>
+
+<!-- End Banner -->
+
+
+  <!-- section -->
+  <div class="section layout_padding padding_top_0" style="background:url('images/Meet\ the\ Founders.png');padding-bottom:20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full"><hr width="100%" style="background:#ffbf0e;height:3px;">
+                    <div class="heading_main text_align_center">
+                        
+                       <h4 style="font-family:'cheer';color:#994276;padding-left:44%;">Follow us on</h4>
+                       
                     </div>
+                    <!-- ShareThis BEGIN -->
+                    <div class="sharethis-inline-follow-buttons" ></div>
+                    <!-- ShareThis END -->
+            
+                    <hr width="100%" style="background:#ffbf0e;height:3px;">
+        
+            <div class="site_information" style="width:70%;">
+                <ul>
+            <li><a class="join_bt" href="Donate.html">Donate</a></li>
+                        <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
+                        </ul>
+                        </div>
                 </div>
             </div>
         </div>
-      </div>
-<!-- end section -->
+    </div>
+  </div>
+
+  <!-- end section -->
 
 
     <!-- Start Footer -->
