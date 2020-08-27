@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Our Work- Letters for Change</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ <!--
+    Share This
+-->
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ef3a6c5a922da001296fc82&product=inline-share-buttons" async="async"></script>
+<!--
+    Share This End
+-->
+
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+<style>
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: none;
+  
+  
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 450px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow:rgba(0, 0, 0, 0.2);
+}
+
+.carousel-cell.is-selected {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+</style>
+
+    <style>
+        @font-face{
+            font-family: varela;
+            src: url('fonts/Varela-Regular.ttf')
+        }
+        @font-face {
+                font-family: cheer;
+                src: url('fonts/Cheeronsta Regular.otf');
+            }
+            @font-face {
+                font-family: blog;
+                src: url('fonts/BloggerSans.ttf');
+            } 
+            @font-face {
+                font-family: happy;
+                src: url('fonts/My Happy Ending - TTF.ttf');
+            }
+            #searchlong{
+  border-radius:25px;
+  border:1px solid #D23F70;
+  float:left;
+  width:72%;
+  background-image: url("https://icon-library.com/images/search-icon-html/search-icon-html-6.jpg");
+                background-repeat: no-repeat;
+                background-size: 16px 16px;
+                background-position: 10px;
+                padding:5px 10px 5px 30px;
+}
+#upload{
+  color:white;
+  background:#D23F70;
+  BORDER:#D23F70;
+  border-radius:25px;
+  padding:5px 10px 5px 10px;
+  font-size:20px;
+  float:right;
+}
+
+            #flow{
+                padding-top:65px;
+                width:100%;
+            }
+            .work{
+                padding:10px;
+                width:33%;
+                font-family: 'blog';
+                background:white;
+                box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+                font-size:18px;
+                font-weight:650;
+                border:none;
+                cursor:pointer;
+                color:#994276;
+            }
+            .active{
+                background:#ffbf0e;
+                color:white;
+            }
+            .work:hover{
+                color:#ffbf0e;
+            }
+            .active:hover{
+                color:white;
+            }
+            .imagetext{
+                font-size:14px;
+                font-weight:600;
+                position:absolute;
+                top:90%;
+                
+                font-family:'blog';
+                color:#050505;
+            }
+            </style>
+
+
+            <!--Responsive slider css-->
+            <style>
+                .card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  
+}
+
+.card-carousel .my-card {
+  height: 30rem;
+  width: 80rem;
+
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position:absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(175, 80, 80, 0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card:nth-child(0):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+  
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(5):before {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+  background:white;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+            </style>
+
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <div class="header_top">
+            <a href="index.html"><img src="images/Logo.png" style="height:150px;width:100px;top:-5px;z-index:16;position:absolute;"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section">
+                        <a class="navbar-brand" href="index.html" style="font-size:45px;color:white;font-family:'happy'">Letters For Change</a>
+                    </div>
+                    <div class="site_information">
+                        <ul>
+                            <!--<li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
+                            <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+7123569847</a></li>-->
+                            <li><a class="join_bt" href="Donate.html">Donate</a></li>
+                            <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="menu_orange_section" style="background: #ff880e;">
+                        <nav class="navbar header-nav navbar-expand-lg">
+                            <div class="menu_section">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                                    <ul class="navbar-nav">
+                                        <li><a class="nav-link" href="index.html">Home</a></li>
+                                        <li><a class="nav-link" href="about.html">About Us</a></li>
+                                        <li><a class="nav-link active" href="WorkFlow.html">Our Work</a></li>
+                                        <li><a class="nav-link" href="GetInvolved.html">Get Involved</a></li>
+                                        <li><a class="nav-link" href="news.html">Media Centre</a></li>
+                                        <li><a class="nav-link" href="faq.html">FAQs</a></li>
+                                        <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                    <!--<div class="search-box">
+                        <input type="text" class="search-txt" placeholder="Search">
+                        <a class="search-btn">
+                            <img src="images/search_icon.png" alt="#" />
+                        </a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- End header -->
+
+    <div id="flow" align="center">
+        <a href="WorkFlow.html"> <button class="work">Work Flow</button></a>
+        <a href="LettersforChange.html"><button class="work active">Letters For Change</button></a>
+        <a href="ImpactfulLetters.html"><button class="work">Impactful Letters</button></a>
+    </div>
+
+    <!-- Start Banner -->
+    <!--<div class="section inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title">
+                        <h3>Services</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- End Banner -->
+    
+    
+
+<!-- section -->
+<div class="card-carousel" style="background:url('images/letterbutter.png');background-size: cover;padding-top:60px;">
+    <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+        <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+        Letters Let Us Let Ours
+    </div>
+    <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+        <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+        Letters Let Us Let Ours
+    </div>
+    <div class="my-card" id="showletters"  style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+        <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+        Letters Let Us Let Ours
+    </div>
+    <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+        <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+        Letters Let Us Let Ours
+    </div>
+    <div class="my-card" id="showletters" style="box-shadow:0 4px 8px 0 rgba(0,0,0,0.3);">
+        <h1 style="background:mediumseagreen;font-size:18px;color:white;">Letters</h1>
+        Letters Let Us Let Ours
+    </div>
+    
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> 
+  <script>
+  $num = $('.my-card').length;
+  $even = $num / 2;
+  $odd = ($num + 1) / 2;
+  
+  if ($num % 2 == 0) {
+    $('.my-card:nth-child(' + $even + ')').addClass('active');
+    $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+    $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+  } else {
+    $('.my-card:nth-child(' + $odd + ')').addClass('active');
+    $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+    $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+  }
+  
+  $('.my-card').click(function() {
+    $slide = $('.active').width();
+    console.log($('.active').position().left);
+    
+    if ($(this).hasClass('next')) {
+      $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+    } else if ($(this).hasClass('prev')) {
+      $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+    }
+    
+    $(this).removeClass('prev next');
+    $(this).siblings().removeClass('prev active next');
+    
+    $(this).addClass('active');
+    $(this).prev().addClass('prev');
+    $(this).next().addClass('next');
+  });
+  
+  
+  // Keyboard nav
+  $('html body').keydown(function(e) {
+    if (e.keyCode == 37) { // left
+      $('.active').prev().trigger('click');
+    }
+    else if (e.keyCode == 39) { // right
+      $('.active').next().trigger('click');
+    }
+  });
+  </script>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+<!-- end section -->
+
+<div class="footer_bottom" style="background:white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"></br>
+                <div style="width:100%;">
+                    
+                <input class="input-field" type="text" id="searchlong" placeholder="Search Letters">
+                   
+                
+                    
+                    <a class="join_bt" href="#" style="background:#D23F70;padding:10px 40px 10px 40px;font-family:'blog';font-size:20px;">Upload Letters</a>
+                        
+                    
+                
+            </div></br></br></br>
+                <h2 style="font-family:'cheer';color:#994276;float:left;font-size:35px;">Letters</h2>
+                       <div style="float:right;">
+                            <a class="join_bt" href="#" style="background:#ffad33;padding:10px 40px 10px 40px;font-family:'blog';font-size:20px;">Themes</a>
+                            <a class="join_bt" href="#" style="background:#ffad33;padding:10px 40px 10px 40px;font-family:'blog';font-size:20px;">Location</a>
+                            <a class="join_bt" href="#" style="background:#ffad33;padding:10px 40px 10px 40px;font-family:'blog';font-size:20px;">Language</a>
+                        </div>
+            </div>
+        </div>
+    </div>
+</br></br>
+</div>
+                       
+              
+<!-- end section -->
+<h4 style="font-family:'cheer';color:#000000;padding-left:15%;font-size:25px;">Section</h4>
+</br>
+<div style="background:url('images/letterbutter.png');background-size: contain;">
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+</div>
+</div>
+
+</br>
+<h4 style="font-family:'Comic Sans MS';color:#000000;padding-left:15%;font-size:25px;">Section</h4>
+</br>
+<div style="background:url('images/letterbutter.png');background-size: contain;">
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+</div>
+</div>
+</br>
+<h4 style="font-family:'Comic Sans MS';color:#000000;padding-left:15%;font-size:25px;">Section</h4>
+</br>
+<div style="background:url('images/letterbutter.png');background-size: contain;">
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+<div class="carousel-cell">
+<h3 style="background:mediumseagreen;color:white;font-size:30px;font-family:'blog';font-weight:450;text-align:center;">Letters</h3>
+</div>
+</div>
+</div>
+    <!-- section -->
+    <!--<div class="section layout_padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+                           <h2><span class="theme_color"></span>Services</h2>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                       <img class="img-responsive" src="images/s1.png" alt="#" />
+                       <h4>Safe & Secure</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                        <img class="img-responsive" src="images/s2.png" alt="#" />
+                        <h4>Mobile Apps</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                        <img class="img-responsive" src="images/s3.png" alt="#" />
+                        <h4>Wallet</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                        <img class="img-responsive" src="images/s4.png" alt="#" />
+                        <h4>Experts Support</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                        <img class="img-responsive" src="images/s2.png" alt="#" />
+                        <h4>Mobile Apps</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                        <img class="img-responsive" src="images/s3.png" alt="#" />
+                        <h4>Wallet</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                       <img class="img-responsive" src="images/s1.png" alt="#" />
+                       <h4>Safe & Secure</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="full services_blog">
+                        <img class="img-responsive" src="images/s2.png" alt="#" />
+                        <h4>Mobile Apps</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-top_30">
+                <div class="col-sm-12">
+                    <div class="full">
+                        <div class="center">
+                            <a class="main_bt" href="#">See More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- end section -->
+   
+
+<!-- section -->
+<div class="section layout_padding padding_top_0" style="background:url('images/Meet\ the\ Founders.png');padding-bottom:20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full"></br><hr width="100%" style="background:#ffbf0e;height:3px;">
+                    <div class="heading_main text_align_center">
+                        
+                       <h4 style="font-family:'cheer';color:#994276;padding-left:44%;">Follow us on</h4>
+                       
+                    </div>
+                    <!-- ShareThis BEGIN -->
+                    <div class="sharethis-inline-follow-buttons" ></div>
+                    <!-- ShareThis END -->
+            
+                    <hr width="100%" style="background:#ffbf0e;height:3px;">
+        
+            <div class="site_information" style="width:70%;">
+                <ul>
+            <li><a class="join_bt" href="Donate.html">Donate</a></li>
+                        <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
+                        </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- end section -->
+
+
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 white_fonts">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>About Us</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="about.html#OurFounder">> Meet the Founder</a></li>
+                                    <li><a href="about.html#OurTeam">> Meet the Team</a></li>
+                                    <li><a href="about.html#InitialContributors">> Meet the Initial Contributors</a></li>
+                                
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>Our Work</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="WorkFlow.html">> WorkFlow</a></li>
+                                    <li><a href="LettersforChange.html">> Letters for Change</a></li>
+                                    <li><a href="ImpactfulLetters.html">> Impactful Letters</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>Get Involved</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="Donate.html">> Donate</a></li>
+                                    <li><a href="volunteer.html">> Volunteer</a></li>
+                                    <li><a href="intern.html">> Intern</a></li>
+                                    <li><a href="PartnerWithUs.html">> Partner with us</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>Media Centre</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="news.html">> News</a></li>
+                                    <li><a href="blog.html">> Blog</a></li>
+                                    <li><a href="gallery.html">> Gallery</a></li>
+
+                                </ul>
+                            </div>
+                            <!--<div class="full">
+                                   <div class="footer_blog full white_fonts">
+                                <h3>Newsletter</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                <div class="newsletter_form">
+                                   <form action="index.html">
+                                      <input type="email" placeholder="Your Email" name="#" required="">
+                                      <button>Submit</button>
+                                   </form>
+                                </div>
+                            </div>
+                               </div>-->
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                                    <h3>Contact Us</h3>
+
+                                    <div class="newsletter_form">
+                                        <form action="index.html">
+                                            <input type="text" placeholder="Name" name="name" required="">
+                                            <input type="number" placeholder="Contact" name="contact" required="">
+                                            <input type="email" placeholder="error@mail.com" name="email" required="">
+                                            <input type="text" placeholder="Message" name="mssg" required="">
+                                            <button>Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>Address</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li>
+                                        <p style="color:#ffbf0e;font-family:'blog';font-size:16px;">PO Box 9075 Goregaon(E) PO, Mumbai - 400063 INDIA</p></br>
+                            
+                                    </li>
+                                 </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© Copyrights 2019 design by html.design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_bottom" style="background:white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                     
+                    <p class="crp">
+                        
+                        <p style="font-family:'cheer';color:#994276;font-size:20px">An Initiative By</p>
+                        <img src="images/Complete.jpg" style="height:70px;width:350px;">
+                         </p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+	
+</body>
+
+</html>

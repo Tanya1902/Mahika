@@ -1,0 +1,841 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>About Us</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--Flickity-->
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <!--Flickity end-->
+
+<!--
+    Share This
+-->
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ef3a6c5a922da001296fc82&product=inline-share-buttons" async="async"></script>
+<!--
+    Share This End
+-->
+    <style>
+        @font-face {
+                font-family: cheer;
+                src: url('fonts/Cheeronsta Regular.otf');
+            }
+            @font-face {
+                font-family: blog;
+                src: url('fonts/BloggerSans.ttf');
+            } 
+            @font-face {
+                font-family: happy;
+                src: url('fonts/My Happy Ending - TTF.ttf');
+            }
+            * { box-sizing: border-box; }
+
+
+
+
+
+.carousel-cell {
+  width: 24%;
+  height: auto;
+  margin-right: 10px;
+  
+  border-radius: 5px;
+  
+}
+
+
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  height:820px;
+  font-family:'blog';
+}
+.card img{
+  height: 300px;
+}
+.card h4,p{
+  font-family:'blog';
+  font-size:18px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+            </style>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+    <!-- Start header -->
+    <header class="top-header">
+        
+      <div class="header_top">
+          <a href="index.html"><img src="images/Logo.png" style="height:150px;width:100px;top:-5px;z-index:16;position:absolute;"></a>
+          <div class="container">
+              <div class="row">
+                  <div class="logo_section">
+                      <a class="navbar-brand" href="index.html" style="font-size:45px;color:white;font-family:'happy'">Letters For Change</a>
+                  </div>
+                  <div class="site_information">
+                      <ul>
+                          <!--<li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
+                          <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+7123569847</a></li>-->
+                          <li><a class="join_bt" href="Donate.html">Donate</a></li>
+                          <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
+                      </ul>
+                  </div>
+                  
+                  
+              </div>
+          </div>
+      
+      </div>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="col-sm-12">
+              <div class="menu_orange_section" style="background: #ff880e;">
+                 <nav class="navbar header-nav navbar-expand-lg"> 
+                   <div class="menu_section">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                  <ul class="navbar-nav">
+                      <li><a class="nav-link" href="index.html">Home</a></li>
+                                    <li><a class="nav-link active" href="about.html">About Us</a></li>
+                                    <li><a class="nav-link" href="WorkFlow.html">Our Work</a></li>
+                                    <li><a class="nav-link" href="GetInvolved.html">Get Involved</a></li>
+                                    <li><a class="nav-link" href="news.html">Media Centre</a></li>
+                                    <li><a class="nav-link" href="faq.html">FAQs</a></li>
+                                    <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                  </ul>
+              </div>
+                   </div>
+               </nav>
+               
+              </div>
+              <!--<div class="search-box">
+                  <input type="text" class="search-txt" placeholder="Search">
+                  <a class="search-btn">
+                      <img src="images/search_icon.png" alt="#" />
+                  </a>
+              </div>--> 
+          </div>
+        </div>
+      </div>
+      
+  </header>
+    <!-- End header -->
+
+    <!-- section -->
+    <div class="section layout_padding about_bg" style="background:url('images/Intial.png') top left no-repeat,white;;background-size:contain,cover">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="full paddding_left_15">
+                      <div class="heading_main text_align_left">
+                         <h3 style="font-family:'cheer';font-size:30pt;color:#994276">About Us</h3>    
+                      </div>
+                  </div>
+                  <div class="full paddding_left_15" >
+                      <p style="font-family:'blog';box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);border-radius:20px;padding:20px;">
+                          Letters for Change is a movement by the children, for the children.
+          You may not be 18 yet. You may still be at school, but you are still aware of the issues that affect your life. And you want to talk about them. It may be about education, public transportation, environment, safety, and many other issues that affect all of our lives.
+          Are you thinking about what one person or one letter can achieve? Mahatma Gandhi, Winston Churchill, Jawaharlal Nehru, Martin Luther King were all letter writers. And they brought change through the power of their words. The pen is indeed mightier than the sword.
+
+                      </p>
+                  </div>
+                  <!--<div class="full paddding_left_15">
+                      <a class="main_bt" href="#">Read More ></a>
+                  </div>-->
+              </div>
+              <div class="col-md-6">
+                  <div class="full text_align_right_img" style="padding-top:110px;">
+                      <img src="images/change.jpg" height="330px" width="420px" style="border-radius:20px;" alt="#" />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- end section -->
+     <!-- section -->
+     <div class="section layout_padding about_bg" id="OurFounder" style="background: url('images/Meet the Founders.png') top left no-repeat,linear-gradient(130deg,white,#b3d9ff,#80bfff,#ff9999,#ff9999); background-size: contain,cover; box-shadow: 1px 2px 5px 1px pink; border-radius: 10px;">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="full paddding_left_15">
+                      <div class="heading_main text_align_left">
+                         <h3 style="font-family:'cheer';font-size:30pt;color:#994276">Meet Our Founder</h3>    
+                      </div>
+                  </div>
+                  <div class="full paddding_left_15" >
+                      
+                        <img src="images\Mahika 1.jpg" style="width:350px;height:450px;border-radius:30px;" />
+                      
+                  </div>
+                  <!--<div class="full paddding_left_15">
+                      <a class="main_bt" href="#">Read More ></a>
+                  </div>-->
+              </div>
+              <div class="col-md-6">
+                  <div class="full text_align_right_img" style="padding-top:100px;">
+                    <div style="font-family:blog;font-size:19.5px;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);border-radius:20px;padding:20px;">
+                      <b style="font-size:25pt;font-family:'blog';">Chief Letter Writer</b>
+                      <br/>
+                      
+                      Our passionate young founder, Mahika is a bright and charming 13-year-old who believes in the power of words and more in the power of children.They can do anything,she says.Mahika is a fan of Marvel and the Jazz Age, and a proud Taurus.She is a master-chef in the kitchen and can bake the most delicious of pizzas from scratch.It is this magic of childhood, this energy, innocence and perspective that Letters For Change is all about.And our chief letter writer Mahika, is truly a Girl on Fire, for shes got her head in the clouds and she's not backing down.
+
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- end section -->
+       
+    
+   
+    <!-- section -->
+    <div class="section" id="OurTeam" style="background:url('images/Home_Vedio.png'),white;background-size:contain;">
+        <div class="container">
+            <div class="row">
+                <div class="heading_main text_align_left">
+                    <h3 style="padding-top:40px;font-family:'cheer';color:#994276;font-size:30pt"> Meet the Team</h3>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="full text_align_right_img">
+                        <div class="col-md-layout_padding">
+                            <div class="heading_main text_align_left">
+                                <h3 style="font-size:28px;font-family:'blog'">Chair-humans of the Postal Services Board</h3>
+                            </div>
+                            <img src="images\Dushyant 2.jpg" style="width:260px;height:350px;border-radius:30px;box-shadow:2px 2px 2px grey;" />
+
+                            <div style="font-size:18px;font-family:'blog'">
+                                <b>Dushyant</b>
+                                <br />
+                                <br />
+                                Dushyant is an imagine-ator and storyteller. His life has been full of adventures and he looks forward to many more. He strongly believes in helping people help themselves in learning
+                                new things. His faith in humanity, and children is inspirational as is his belief in the possibilities of life. He is the Captain, steering the ship that Letters For Change is.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 layout_padding">
+                    <!--<div class="full paddding_left_15">
+            <div class="heading_main text_align_left">
+               <h2><span class="theme_color">Welcome</span> To Exchange</h2>
+            </div>
+        </div>-->
+
+                    <div class="full text_align_right_img">
+                        <div class="col-md-layout_padding">
+
+                            <img src="images\Monisha.jpg" style="width:250px;height:370px;border-radius:30px;box-shadow:2px 2px 2px grey;" />
+
+                            <div style="font-size:18px;font-family:'blog'">
+                                <b>Monisha</b>
+                                <br />
+                                <br />
+                                Monisha is here to transform lives. She is the best of both worlds. She is the perfect combination of determination and warmth, perfection and kindness.
+                                She is constantly spreading smiles all around and has made Letters For Change a space of learning and growth.
+                            </div>
+                        </div>
+                        <!--<div class="full paddding_left_15">
+                <a class="main_bt" href="#">About more ></a>
+            </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+<!-- section -->
+
+<div id="InitialContributors" style="background-image: url('images/Intial.png'),linear-gradient(to bottom right,#EEC0C6,#7EE8FA);background-size: contain,cover">
+  <h4 align="center" style="padding-top:40px;font-size:30pt;font-family:'cheer';color:#994276"> Meet Our Initial Contributors</h4>
+  </br>
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+  <div class="carousel-cell">
+    
+    <div class="card">
+      <img src="images/Tina Joseph.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Tina Joseph</b></h4> 
+        <p>Tina Joseph is the best work colleague you can ask for. For someone quite mature and intelligent for her age, Tina is extremely down to earth and very affectionate. She creates magic with her words and excitement with her ideas. Tina’s honesty with all the hilarious GIFs she sends around on WhatsApp, makes her one of the loveliest people here at MMF.
+          She dreams of travelling the world someday, and becoming a renowned writer.</br>
+          <a href="https://www.linkedin.com/in/tina-joseph-1a43321b1/">Linked In</a></p> 
+      </div>
+    </div>
+      
+      
+    
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Elizabeth eldho.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Elizabeth Eldho</b></h4> 
+        <p> A fount of knowledge, Elizabeth ensures that every video or post we create meets your marketing goals. She’s terrified of snakes, but wants to go skydiving someday. She is susceptible to cry during movies (aw). Being a quick learner with endless creative energy, she dreams of being an entrepreneur. Creativity doesn’t stop when she takes a day off, though. She has recently upcycled an old furniture piece.
+        </br><a href="https://www.linkedin.com/in/elizabeth-eldho-299671193/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Mukesh.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Mukesh Mankame</b></h4> 
+        <p> Mukesh Mankame, the Creative Director of Gang of Designers, is one of the best designers in the country. He created the MMF logo and design language. They can make anyone smile with the hope and brightness they represent. A true artist, Mukesh believes all his paintings to be the best achievements of his life.
+        </br><a href="https://www.linkedin.com/in/mukesh-mankame-6601692a">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Khushi.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Khushi</b></h4> 
+        <p> Khushi says she is her happiest introverted self when she is reading, creating and procrastinating (wow). She is extremely passionate and thoughtful about her work. She is here inspiring us with her presence. Her zeal encourages the team to think beyond the obvious. Khushi has an insatiable hunger for knowledge. Given a chance, she would read books till eternity. She also wants to see the marvellous world we live in. Her infectious enthusiasm brightens the day at MMF.
+            PS. If she met you, she’ll definitely try to convince you to read ‘The Secret History.’
+        </br><a href="https://www.linkedin.com/in/khushijain27">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Achutan.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Achuthan Kannan</b></h4> 
+        <p>‘Indeed, children are incorruptible.’ Achu, who believes immensely in the ability of children to have an impact, has been actively involved in creating a strategy for the brand and communications since MMF’s inception. Supporting children for the right cause is crucial today and he wholly trusts in their pure energy. He hopes that his life experience will help MMF evolve. His fervent wish is that this initiative should be a part of every schools’ extra-curricular activity for social reach. It will nurture empathy in every child’s mind.
+        </br><a href="https://www.linkedin.com/in/achuthan-kannan-2446592">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+    <div class="card">
+      <img src="images/Aditya.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Aditya Raghav Trivedi</b></h4> 
+        <p> Aditya is a young engineer with a myriad of interests. He is always open to new ideas and eager to learn. He loves stargazing and reading, moreover he wants to master the sitar and drums. Though he is afraid of bees, he is fearless when it comes to undertaking projects. We are extremely fortunate to have him on board. (Can you believe that his dream is to start his own religion some day?)
+        </br><a href="https://www.linkedin.com/in/3vedi/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Aditi.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Aditi Jain</b></h4> 
+        <p>Aditi has a creative soul, with a passion for baking and painting. But who knew that she is an equally skilled business negotiator and communicator. Though if you say anything appreciating her, she will smile coyly and reply that she still has a lot to learn. In her dream towards becoming fearless, Aditi has already taken the first few steps. She not only brings warmth and friendship to the team but also brilliant partnerships.
+        </br><a href="https://www.linkedin.com/in/aditi-jain-4a64a519b/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Elizabeth Eapen.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Elizabeth Eapen</b></h4> 
+        <p>Elizabeth is a magical combination of patience and simplicity. She loves to sing and wants to learn to play the guitar. Her work ethic is exemplary, she is always efficient and punctual. It will be fair to say that she is a one-woman-army as she has singlehandedly (and excellently) done her job. She doesn’t believe in the word impossible and sets impeccable goals, which she also successfully achieves. Ironically, she is the light here at MMF but is afraid of the dark. She dreams of becoming an author.
+        </p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Priyanka.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Priyanka Binnani</b></h4> 
+        <p>Priyanka is always ready for a conversation over coffee. She is full of love and affection and the very definition of amicability. She almost drowned once and has since developed hydrophobia, but her love for travel, specially beaches, prevails. Priyanka’s interesting personality and repository of ideas have been phenomenal in getting MMF where it is. She is looking forward to learning ballet sometime in the future, and dreams of becoming an entrepreneur.
+            Her unique and out of the box thinking has been an absolute blessing for MMF.
+        </br> <a href="https://www.linkedin.com/in/priyanka-binnani-554547179/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Naman.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Naman Saxena</b></h4> 
+        <p>*Drum roll please* Naman is like sunshine, he brightens up everyone, in the weekly video calls, brainstorming sessions and even WhatsApp groups. He loves cooking and playing sports. A believer of ‘no dream is unachievable,’ Naman wants to learn to fly a plane. When we asked him what he is afraid of, much like all his hilarious replies, he said “random bikers who drive rash on the road.” MMF will forever be thankful to his joviality, stellar presentation skills and stunning proposals. We are sure that he will be able to actualise his dream of owning a business empire.
+        </br><a href="https://www.linkedin.com/in/naman-saxena-1a78971a3/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Shivali.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Shivali Chandra</b></h4> 
+        <p>Shivali is a reader, a writer, and a listener. She has expanded the network of MMF, bringing more and more children on board with the initiative. She brings positive energy with her, with which she someday hopes to run a small cafe.
+        </br><a href="https://www.linkedin.com/in/shivali-chandra-4376bb1a7/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Praachi.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Praachi Bhatia</b></h4> 
+        <p>Prachi is a friendly, happy person who is always available to chat with her friends. She has helped more volunteers befriend MMF.  She has helped design the alumni program of MMF, helping everyone to stay connected. Prachi wants to learn sign language someday and volunteer as an interpreter and help people more stay connected.
+        </br><a href="https://www.linkedin.com/in/praachi-bhatia-637449197/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Harishna.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Goka Harishna</b></h4> 
+        <p>MMF’s very own artist, Harishna loves to sketch. She adds beauty to everything she touches, just like MMF’s website. Her magical designs have brought life to the website. Harishna wants to learn how to drive, and travel around, hopefully overcoming her fear of scary pigeons.
+        </p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Saloni.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Saloni Sharma</b></h4> 
+        <p>Saloni makes the toughest things possible. She works with precision and dances with a free-spirit. She loves spending time with her friends and never wants to think of a life without them. Saloni has documented, planned and tracked the MMF website project with utmost precision. She has coordinated every little detail to make this website a success.
+        </br><a href="https://www.linkedin.com/in/saloni-sharma-2ab761192/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Pridhi.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Pridhi</b></h4> 
+        <p>Pridhi is passionate about serving humanity and bringing happiness to the world. She brings this passion to MMF with her out-of-the-box ideas. She has helped MMF reach out to the world and create new connections. Pridhi is always learning and dreams of discovering new passions.
+        </p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Ashwin.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Ashwin</b></h4> 
+        <p> Ashwin is unafraid to pursue his dreams. He is the brain behind the MMF website who led the entire team to bring this platform together. He loves to be a part of sports events and dreams of umpiring a test match someday.
+        </br><a href="https://www.linkedin.com/in/ashwin-kumar-m-5a55641a">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Alex.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Alex Gabriel Simon</b></h4> 
+        <p>A full-on talent, he applies his hyper-attention to details. And he probably does photography when he's not with us. He can’t start his day without meditation. Since childhood, he has always drawn zig zag lines on walls, and feared snakes. He wants to learn violin, so he can show-off. Whenever we ask for a favour, Alex would say, ‘Hey, me.’ Perhaps that’s why he dreams of serving the people.
+        </br><a href="https://www.linkedin.com/in/alex-gabriel-simon-348105171/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Tina Garg.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Tina Garg</b></h4> 
+        <p>  Work, work, work. Tina does work a lot. ‘The Rock’ of the team. From team management to developing creations, she has always been a leader. How cool is that? Tina enjoys dancing, and she wants to learn classical dance. Her aura of positivity helps us move forward confidently with our ideas (even if they’re dumb). One thing that she can’t live without? Chocolates and her laptop. She dreams of being a popular dancer and touring the world.
+        </br><a href="https://www.linkedin.com/in/tina-garg-69ba81118/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- end section -->
+
+
+
+<!-- section -->
+<div id="StarContributors" style="background-image: url('images/Intial.png'),linear-gradient(to bottom right,#EEC0C6,#7EE8FA);background-size: contain,cover">
+  <h4 align="center" style="padding-top:40px;font-size:30pt;font-family:'cheer';color:#994276"> Star Contributors</h4>
+  </br>
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity='{ "groupCells": true }'>
+  
+  
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Praachi.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Praachi Bhatia</b></h4> 
+        <p>Prachi is a friendly, happy person who is always available to chat with her friends. She has helped more volunteers befriend MMF.  She has helped design the alumni program of MMF, helping everyone to stay connected. Prachi wants to learn sign language someday and volunteer as an interpreter and help people more stay connected.
+        </br><a href="https://www.linkedin.com/in/praachi-bhatia-637449197/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Harishna.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Goka Harishna</b></h4> 
+        <p>MMF’s very own artist, Harishna loves to sketch. She adds beauty to everything she touches, just like MMF’s website. Her magical designs have brought life to the website. Harishna wants to learn how to drive, and travel around, hopefully overcoming her fear of scary pigeons.
+        </p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Saloni.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Saloni Sharma</b></h4> 
+        <p>Saloni makes the toughest things possible. She works with precision and dances with a free-spirit. She loves spending time with her friends and never wants to think of a life without them. Saloni has documented, planned and tracked the MMF website project with utmost precision. She has coordinated every little detail to make this website a success.
+        </br><a href="https://www.linkedin.com/in/saloni-sharma-2ab761192/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Pridhi.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Pridhi</b></h4> 
+        <p>Pridhi is passionate about serving humanity and bringing happiness to the world. She brings this passion to MMF with her out-of-the-box ideas. She has helped MMF reach out to the world and create new connections. Pridhi is always learning and dreams of discovering new passions.
+        </p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Ashwin.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Ashwin</b></h4> 
+        <p> Ashwin is unafraid to pursue his dreams. He is the brain behind the MMF website who led the entire team to bring this platform together. He loves to be a part of sports events and dreams of umpiring a test match someday.
+        </br><a href="https://www.linkedin.com/in/ashwin-kumar-m-5a55641a">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Alex.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Alex Gabriel Simon</b></h4> 
+        <p>A full-on talent, he applies his hyper-attention to details. And he probably does photography when he's not with us. He can’t start his day without meditation. Since childhood, he has always drawn zig zag lines on walls, and feared snakes. He wants to learn violin, so he can show-off. Whenever we ask for a favour, Alex would say, ‘Hey, me.’ Perhaps that’s why he dreams of serving the people.
+        </br><a href="https://www.linkedin.com/in/alex-gabriel-simon-348105171/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+
+    <div class="card">
+      <img src="images/Tina Garg.jpeg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Tina Garg</b></h4> 
+        <p>  Work, work, work. Tina does work a lot. ‘The Rock’ of the team. From team management to developing creations, she has always been a leader. How cool is that? Tina enjoys dancing, and she wants to learn classical dance. Her aura of positivity helps us move forward confidently with our ideas (even if they’re dumb). One thing that she can’t live without? Chocolates and her laptop. She dreams of being a popular dancer and touring the world.
+        </br><a href="https://www.linkedin.com/in/tina-garg-69ba81118/">Linked In</a></p> 
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- end section -->
+
+
+
+ <!-- section -->
+ <div class="section layout_padding padding_top_0" style="background:url('images/Meet\ the\ Founders.png');padding-bottom:20px;">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="full"></br><hr width="100%" style="background:#ffbf0e;height:3px;">
+                  <div class="heading_main text_align_center">
+                      
+                     <h4 style="font-family:'cheer';color:#994276;padding-left:44%;">Follow us on</h4>
+                     
+                  </div>
+                  <!-- ShareThis BEGIN -->
+                  <div class="sharethis-inline-follow-buttons" ></div>
+                  <!-- ShareThis END -->
+          
+                  <hr width="100%" style="background:#ffbf0e;height:3px;">
+      
+          <div class="site_information" style="width:70%;">
+              <ul>
+          <li><a class="join_bt" href="Donate.html">Donate</a></li>
+                      <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
+                      </ul>
+                      </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end section -->
+
+        
+
+
+
+
+
+
+                <!-- Start Footer -->
+                <footer class="footer-box">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 white_fonts">
+                              <div class="row">
+                                  <div class="col-sm-6 col-md-6 col-lg-3">
+                                      <div class="full">
+                                          <h3>About Us</h3>
+                                      </div>
+                                      <div class="full">
+                                          <ul class="menu_footer">
+                                              <li><a href="about.html#OurFounder">> Meet the Founder</a></li>
+                                              <li><a href="about.html#OurTeam">> Meet the Team</a></li>
+                                              <li><a href="about.html#InitialContributors">> Meet the Initial Contributors</a></li>
+                                          
+                                         </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6 col-md-6 col-lg-3">
+                                      <div class="full">
+                                          <h3>Our Work</h3>
+                                      </div>
+                                      <div class="full">
+                                          <ul class="menu_footer">
+                                              <li><a href="WorkFlow.html">> WorkFlow</a></li>
+                                              <li><a href="LettersforChange.html">> Letters for Change</a></li>
+                                              <li><a href="ImpactfulLetters.html">> Impactful Letters</a></li>
+          
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6 col-md-6 col-lg-3">
+                                      <div class="full">
+                                          <h3>Get Involved</h3>
+                                      </div>
+                                      <div class="full">
+                                          <ul class="menu_footer">
+                                              <li><a href="Donate.html">> Donate</a></li>
+                                              <li><a href="volunteer.html">> Volunteer</a></li>
+                                              <li><a href="intern.html">> Intern</a></li>
+                                              <li><a href="PartnerWithUs.html">> Partner with us</a></li>
+          
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6 col-md-6 col-lg-3">
+                                      <div class="full">
+                                          <h3>Media Centre</h3>
+                                      </div>
+                                      <div class="full">
+                                          <ul class="menu_footer">
+                                              <li><a href="news.html">> News</a></li>
+                                              <li><a href="blog.html">> Blog</a></li>
+                                              <li><a href="gallery.html">> Gallery</a></li>
+          
+                                          </ul>
+                                      </div>
+                                      <!--<div class="full">
+                                             <div class="footer_blog full white_fonts">
+                                          <h3>Newsletter</h3>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                          <div class="newsletter_form">
+                                             <form action="index.html">
+                                                <input type="email" placeholder="Your Email" name="#" required="">
+                                                <button>Submit</button>
+                                             </form>
+                                          </div>
+                                      </div>
+                                         </div>-->
+                                  </div>
+                                  <div class="col-sm-6 col-md-6 col-lg-3">
+                                      <div class="full">
+                                          <div class="footer_blog full white_fonts">
+                                              <h3>Contact Us</h3>
+          
+                                              <div class="newsletter_form">
+                                                  <form action="index.html">
+                                                      <input type="text" placeholder="Name" name="name" required="">
+                                                      <input type="number" placeholder="Contact" name="contact" required="">
+                                                      <input type="email" placeholder="error@mail.com" name="email" required="">
+                                                      <input type="text" placeholder="Message" name="mssg" required="">
+                                                      <button>Send</button>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6 col-md-6 col-lg-3">
+                                      <div class="full">
+                                          <h3>Address</h3>
+                                      </div>
+                                      <div class="full">
+                                          <ul class="menu_footer">
+                                              <li>
+                                                  <p style="color:#ffbf0e;font-family:'blog';font-size:16px;">PO Box 9075 Goregaon(E) PO, Mumbai - 400063 INDIA</p></br>
+                                      
+                                              </li>
+                                           </ul>
+                                      </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+                <!-- End Footer -->
+            
+                <div class="footer_bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                
+                                 
+                                <p class="crp">
+                                   
+                                    <p style="color:white;">Copyright ©2020 All rights reserved.</p></p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="footer_bottom" style="background:white;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                
+                                 
+                                <p class="crp">
+                                    <p style="color:white;font-family:'cheer';color:#994276;font-size:20px">An Initiative By</p>
+                                    <img src="images/Complete.jpg" style="height:70px;width:350px;">
+                                     </p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+                <!-- ALL JS FILES -->
+                <script src="js/jquery.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <!-- ALL PLUGINS -->
+                <script src="js/jquery.magnific-popup.min.js"></script>
+                <script src="js/jquery.pogo-slider.min.js"></script>
+                <script src="js/slider-index.js"></script>
+                <script src="js/smoothscroll.js"></script>
+                <script src="js/form-validator.min.js"></script>
+                <script src="js/contact-form-script.js"></script>
+                <script src="js/isotope.min.js"></script>
+                <script src="js/images-loded.min.js"></script>
+                <script src="js/custom.js"></script>
+
+                
+</body>
+
+</html>

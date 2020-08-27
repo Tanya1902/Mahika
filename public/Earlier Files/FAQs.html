@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+
+        @font-face {
+            font-family: happy;
+            src: url('fonts/My Happy Ending - TTF.ttf');
+        }
+
+    @font-face { font-family: cheer; src: url('fonts/Cheeronsta Regular.otf'); }
+
+    @font-face { font-family: blog; src: url('fonts/BloggerSans.ttf'); }
+
+    @font-face { font-family: varela; src: url('fonts/Varela-Regular.ttf'); }
+
+        .btn {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #ffad33;
+            color: white;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .btn:hover {
+                background-color: #ff9933;
+                color: white;
+            }
+
+        .btn2 {
+            position: absolute;
+            background-color: MediumSeaGreen;
+            border-radius: 5px;
+            color: white;
+            font-size: 10px;
+            top: 1.5%;
+            left: 75%;
+            width: 150px;
+            border: none;
+            height: 32px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            text-align: center;
+        }
+
+
+            .btn2:hover {
+                background-color: #39ac6d;
+            }
+
+
+        .top-right {
+            position: absolute;
+            font-family: Comic Sans MS;
+            font-size: 105%;
+            top: 150px;
+            right: 0px;
+            color: white;
+            background-color: #7b1e5e;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .divOne {
+            position:fixed;
+            z-index:16;
+            width:100%;
+            height: 80px;
+            border-bottom: 50px solid white;
+            text-align: left;
+            background-color: #7b1e5e;
+            padding: 26px 40px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow:grey 2px 1px 10px 1px;
+        }
+
+        #letters {
+            position: absolute;
+            font-family: happy;
+            font-size: 25pt;
+            top: -25px;
+            left: 80px;
+            color: white;
+        }
+
+        #text {
+            position: absolute;
+            left: 100px;
+            top: 180%;
+            font-family: Comic Sans MS;
+            font-size: 130%;
+            color: black;
+        }
+
+        .navbuttons {
+            position: fixed;
+            border-radius: 5px;
+            color: black;
+            border-bottom: 1px solid gray;
+            background-color: white;
+            font-size: 10px;
+            top: 8.5%;
+            left: 10%;
+            width: 130px;
+            border: none;
+            height: 34px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+            .navbuttons:current {
+                color: #ffa31a;
+            }
+
+        #search {
+            position: fixed;
+            top: 8.5%;
+            left: 80%;
+            float: right;
+            border: 1.5px solid #ffad33;
+            border-radius: 25px;
+            background: url() no-repeat scroll 7px 7px;
+            padding-left: 30px;
+            background-image: url("https://icon-library.com/images/search-icon-html/search-icon-html-6.jpg");
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            background-position: 2px 1px 2px;
+        }
+
+
+        #shadow-text {
+            position: absolute;
+            height: 70vh;
+            width: 1300px;
+            box-shadow: 5px 5px 15px 0px grey;
+            left: 120px;
+            top: 300px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+
+        .FAQs{
+            height: 195vh;
+            background-color: white;
+            background: url('images/Buterflies.png') top left no-repeat;
+            background-size: auto;
+        
+        }
+
+    .contact { height: 70vh; background: url('images/Footer.png') left top no-repeat, #ac3973; background-size: contain; }
+
+        .share {
+            height: 35vh;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ffa31a;
+            text-decoration:none;
+        }
+        .active{
+            color:#ffa31a !important 
+        }
+    </style>
+</head>
+<body>
+    <div class="divOne">
+        <button class="btn2" style="position: fixed;"><a href="Get Involved.html" style="color: white;">Write a Letter</a></button>
+        <button class="btn2" style="left:86.5%;position: fixed;">
+           <a href="Get Involved.html" style="color: white;">Donate</a>
+        </button>
+
+        <p id="letters" style="position: fixed;">Letters for Change</p>
+        <img src="images\Logo.png" align="left" style="position:fixed;top:0;left:0;width:80px;height:110px" />
+
+        <button class="navbuttons" style="left: 6%"><a href="index.html">HOME</a></button>
+        <button class="navbuttons" style="left: 13%"><a href="AboutUs.html">ABOUT US</a></button>
+        <button class="navbuttons" style="left: 21%"><a href="WorkFlow.html">OUR WORK</a></button>
+        <button class="navbuttons" style="left: 30%"><a href="Get Involved.html">GET INVOLVED</a></button>
+        <button class="navbuttons" style="left: 41%"><a href="Blog.html">MEDIA CENTRE</a></button>
+        <button class="navbuttons" style="left: 50%"><a href="FAQs.html" class="active">FAQ</a></button>
+        <button class="navbuttons" style="left: 58%"><a href="ContactUs.html">CONTACT US</a></button>
+
+        <input class="input-field"
+               type="text"
+               id="search"
+               placeholder="Search.." style="position: fixed;"><br />
+    </div>
+
+
+
+
+
+
+<div style="padding-top:100px;">
+    <!--FAQs-->
+    <div class="FAQs" >
+        <h2 style="position:absolute;top:210px;left:120px;color:#7b1e5e;font-family:cheer">FAQs</h2>
+
+
+        <div id="shadow-text">
+            <h6 style="padding:8px;padding-left:20px;font-family:varela">
+                Q: How can I donate to MMF?
+                <br />
+                A: Donations to MMF happen in a simple procedure wherein you can provide your contributions either directly through our website or through the campaigns we raise in fundraising platforms.
+            </h6>
+
+
+            <hr style="color:orange;height:0.8px;background-color:orange" />
+            <h6 style="padding:8px;padding-left:20px;font-family:varela">
+                Q: Do I get a receipt of my donation?
+                <br />
+                A: Yes. Receipts will be provided for each donation.
+            </h6>
+
+
+            <hr style="color:orange;height:0.8px;background-color:orange" />
+            <h6 style="padding:8px;padding-left:20px;font-family:varela">
+                Q: What is my donation used for?
+                <br />
+                A: All donations are used for coordinating and managing the letter exchange process that takes place.
+            </h6>
+
+            <hr style="color:orange;height:0.8px;background-color:orange" />
+            <h6 style="padding:8px;padding-left:20px;font-family:varela">
+                Q: How do I know my donation is being used for the right cause?
+                <br />
+                A: We at MMF guarantees that each and every letter send by every kid reaches the proper destination for which the amount contributed will be us
+            </h6>
+            <hr style="color:orange;height:0.6px;background-color:orange" />
+
+        </div>
+
+
+
+
+
+        <h4 style="position:relative;top:112vh;left:120px;font-family:blog;font-size:22px;"><b>Fundraise</b></h4>
+
+        <p style="position:relative;top:112vh;left:120px;font-family:blog;font-size:20px; background-color:white">
+            Fundraising at MMF is all about you. Doing things your way help MMF make a difference.
+            You can support MMFï¿½s initiatives by sponsoring our campaign or by holding <br> your own fundraiser and starting the conversation to ensure childrenï¿½s voices are heard loud and clear.
+        </p>
+
+
+        <div id="shadow-text" style="height:30vh;position:relative;top:118vh;">
+            <h5 style="padding-left:20px;padding-top:20px;font-family:varela">
+                Q: Why do we need your funds?
+                <br />
+                A: We require your funds so that we can ensure that the letters from the children reach their respective destination.
+            </h5>
+            <hr style="color:orange;height:0.6px;background-color:orange" />
+
+
+            <h5 style="padding:10px;padding-left:20px;font-family:varela">
+                Q: How your support will change lives?
+                <br />
+                A: Fundraising is essential to organise and coordinate all letter exchanging processes that will fulfill the dreams of each and every child.
+            </h5>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--SHARE-->
+    <div class="share">
+
+        <hr style="position:absolute;width:100%;height:2px;color:orange;background-color:#ffb84d" />
+        <h5 style="font-family:Comic sans MS;position:relative;left:700px;top:5vh"><i>Share this page</i></h5>
+        <a href="https://twitter.com/lfc_mmf">
+            <img src="https://www.kindpng.com/picc/m/20-203688_twitter-icon-transparent-background-twitter-logo-hd-png.png" style="position:relative;width:30px;height:30px;left:710px;top:6vh " />
+        </a>
+
+        <a href="https://instagram.com/lfc_mmf?igshid=jywrr2ebbvm">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="THE NEW INSTAGRAM LOGO 2020 PNG" style="position:relative;width:28px;height:28px;left:720px;top:6vh;" />
+        </a>
+
+        <a href="https://facebook.com">
+            <img src="https://www.pngitem.com/pimgs/m/18-185958_transparent-fb-icon-png-transparent-background-facebook-icon.png" style="position:relative;width:30px;height:30px;left:730px;top:6vh;" />
+        </a>
+
+        <hr style="position:relative;width:100%;height:1.5px;top:10vh;color:orange;background-color:#ffb84d" />
+
+        <button class="btn2" style="position:relative;left:580px;top:12vh;width:180px"><a href="Get Involved.html" style="color:white;">Write a Letter</a></button>
+        <button class="btn2" style="position:relative;left:620px;top:12vh;width:180px"><a href="Get Involved.html" style="color:white">Donate</a></button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--CONTACT US FOOTER-->
+
+    <div class="contact">
+        <p style="position:absolute;left:135px;top:258vh;color:white;font-size:18px">
+            About us
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:262vh;color:white;background-color:white;left:135px" />
+        <p style="position:absolute;top:266vh;color:white;left:135px">
+            <a href="AboutUs.html" style="color:white;">Meet the Founder</a>
+            <br />
+           <a href="AboutUs.html" style="color:white;"> Meet the Team</a>
+            <br />
+            <a href="AboutUs.html" style="color:white;">Meet the Initial Contributors</a>
+
+        </p>
+
+
+
+        <p style="position:absolute;left:350px;top:258vh;color:white;font-size:18px">
+            Our Work
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:262vh;color:white;background-color:white;left:350px" />
+        <p style="position:absolute;top:266vh;color:white;left:350px">
+            <a href="WorkFlow.html"style="color:white;" > Work Flow</a>
+            <br />
+            <a href="OurWork_Letters.html" style="color:white;"> Letters for Change</a>
+            <br />
+            <a href="OurWork_ImpactfulLetters.html" style="color:white;"> Bringing the Change</a>
+
+        </p>
+
+        <p style="position:absolute;left:575px;top:258vh;color:white;font-size:18px">
+            Get Involved
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:262vh;color:white;background-color:white;left:575px" />
+        <p style="position:absolute;top:266vh;color:white;left:575px">
+            <a href="Get Involved.html" style="color:white">Donate</a>
+            <br />
+            <a href="Volunteer.html" style="color:white">Volunteer</a>
+            <br />
+            <a href="Intern.html" style="color:white;">Intern</a>
+            <br />
+            <a href="Get Involved.html" style="color:white;">Partner With Us</a>
+
+        </p>
+
+        <p style="position:absolute;left:795px;top:258vh;color:white;font-size:18px">
+            Media Centre
+        </p>
+
+        <hr style="position:absolute;width:9%;height:1px;top:262vh;color:white;background-color:white;left:795px" />
+        <p style="position:absolute;top:268vh;color:white;left:795px">
+            <a href="Blog.html" style="color:white">News</a>
+            <br />
+            <a href="Blog.html" style="color:white">Blogs</a>
+            <br />
+            <a href="Blog.html" style="color:white">Gallery</a>
+
+        </p>
+
+
+        <p style="position:absolute;left:135px;top:290vh;color:white;font-size:20px">
+            Address-
+        </p>
+        <p style="position:absolute;left:135px;top:294vh;color:orange;font-size:18px">
+            PO Box 9075</br>Goregaon(E) PO,</br>Mumbai - 400063</br>INDIA
+        </p>
+
+        <p style="position:absolute;right:350px;top:258vh;color:orange;font-size:18px">
+            Contact Us
+        </p>
+
+        <input class="input-field"
+               type="text"
+               id="Name"
+               placeholder="Name"
+               style="position:absolute;right:200px;top:266vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="Contact"
+               placeholder="Contact"
+               style="position:absolute;right:200px;top:274vh;width:250px;border-radius: 15px;">
+
+        <input class="input-field"
+               type="text"
+               id="MailID"
+               placeholder="error@mail.com"
+               style="position:absolute;right:200px;top:282vh;width:250px;border-radius: 15px;">
+
+        <button class="btn2" style="left:75%;top:290vh;background-color:orange">
+            Send
+        </button>
+    </div>
+    <div style="height:10vh;">
+        <a href="AboutUs.html">
+        <h4 style="font-family:cheer;color:#730099;position:absolute;left:510px;top:320vh;">An Initiative by</h4>
+
+
+        <img src="images/Complete mmf logo.jpg"  style="position:absolute;width:20%;height:9%;top:318vh;left:700px;"/>
+
+</a>
+    </div>
+</body>
+
+</html>

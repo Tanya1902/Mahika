@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Our Work- Work Flow</title>
+    <title>Upload Letter</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -55,45 +55,49 @@
                 font-family: happy;
                 src: url('fonts/My Happy Ending - TTF.ttf');
             }
-            #flow{
-                padding-top:65px;
-                width:100%;
-                
-                
+            body{
+                background:url('images/Meet\ the\ Founders.png') repeat;
             }
-            .work{
-                padding:10px;
-                width:33%;
-                font-family: 'blog';
-                background:white;
-                box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
-                font-size:18px;
-                font-weight:650;
-                border:none;
-                cursor:pointer;
-                color:#994276;
-            }
-            .work:hover{
-                color:#ffbf0e;
-            }
-            .active{
-                background:#ffbf0e;
-                color:white;
-            }
-            .active:hover{
-                color:white;
-            }
-            .imagetext{
-                font-size:14px;
-                font-weight:600;
-                position:absolute;
-                top:90%;
-                
-                font-family:'blog';
-                color:#050505;
-            }
-            ::placeholder{
+           
+            #partnerform input{
+                width:50%;
+                padding:10px 20px;
                 color:#000000;
+                font-family:'blog';
+                border:1px solid black;
+                border-radius:15px;
+                font-size:18px;
+            }
+            input::placeholder{
+                color:#000000;
+                font-weight:500;
+            }
+            #submit{
+                background:mediumseagreen;
+                padding:10px 40px;
+                color:white;
+                font-weight:800;
+                border:none;
+                border-radius:15px;
+                font-size:20px;
+            }
+            #partnerbutt{
+                padding:10px 40px;
+                width:35%;
+                margin-bottom:-80px;
+                border:none;
+                border-radius:25px;
+                background:linear-gradient(315deg,#420e1d,#c9185c);
+                color:white;
+                font-weight:800;
+                font-size:20px;
+                box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)
+            }
+            label[for=letter]{
+                cursor:pointer;
+                color:#000000;
+                font-size:20px;
+                font-family:'blog';
             }
             </style>
     <!--[if lt IE 9]>
@@ -127,7 +131,7 @@
                         <ul>
                             <!--<li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
                             <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+7123569847</a></li>-->
-                            <li><a class="join_bt" href="GetInvolved.html">Donate</a></li>
+                            <li><a class="join_bt" href="Donate.html">Donate</a></li>
                             <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
                         </ul>
                     </div>
@@ -138,7 +142,7 @@
         <div class="header_bottom">
             <div class="container">
                 <div class="col-sm-12">
-                    <div class="menu_orange_section" style="background: #ff880e;">
+                    <div class="menu_orange_section" style="background: white;">
                         <nav class="navbar header-nav navbar-expand-lg">
                             <div class="menu_section">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,7 +154,7 @@
                                     <ul class="navbar-nav">
                                         <li><a class="nav-link" href="index.html">Home</a></li>
                                         <li><a class="nav-link" href="about.html">About Us</a></li>
-                                        <li><a class="nav-link active" href="WorkFlow.html">Our Work</a></li>
+                                        <li><a class="nav-link" href="WorkFlow.html">Our Work</a></li>
                                         <li><a class="nav-link" href="GetInvolved.html">Get Involved</a></li>
                                         <li><a class="nav-link" href="news.html">Media Centre</a></li>
                                         <li><a class="nav-link" href="faq.html">FAQs</a></li>
@@ -176,182 +180,61 @@
     <!-- End header -->
 
     
-    <div id="flow" align="center">
-       <a href="WorkFlow.html"> <button class="work active">Work Flow</button></a>
-        <a href="LettersforChange.html"><button class="work">Letters For Change</button></a>
-        <a href="ImpactfulLetters.html"><button class="work">Impactful Letters</button></a>
-    </div>
-
-
-
-    <!-- Start Banner -->
-    <!--<div class="section inner_page_banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner_title">
-                        <h3>News</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- End Banner -->
     
-   <!-- section -->
-    <div class="section layout_padding" style="background:url('images/Buterflies.png');background-size:120% 100%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <div class="heading_main text_align_center">
-                           <h3 style="font-family:'cheer';color:#994276;font-size:30pt;"><span class="theme_color"></span>Work Flow</h3>    
-                        </div>
-                    </div>
+ <!-- Start Banner -->
+ <div class="section inner_page_banner" style="background:linear-gradient(315deg, #5181eb 0%, #f8d744d5 74%, white);height:500px;border-bottom-left-radius:5%;border-bottom-right-radius:5%;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner_title">
+                </br></br>
+                    <h3 style="font-size:45pt;font-family:'blog';color:#FFFFFF;font-weight:700">You maybe underage to vote. But you can still bring change with a single stamp.</h3>
+                    <h4 style="font-size:30pt;font-family:'blog';color:#D23F70;font-weight:650;padding-left:20px;">Write a Letter  -----------</h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="w3-container">
-                        <div class="w3-card-4" style="width:340px;height:320px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\change.jpg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    1. Encouraging young change-makers  to write letters with a single prompt:
-                                    "Write a letter on issues that you think will change your life."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="w3-container">
-                        <div class="w3-card-4" style="width:340px;height:320px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\1.jpg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    2. Asking them to post their letters to us through WhatsApp on 9321654150.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="w3-container">
-                        <div class="w3-card-4" style="width:340px;height:320px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\6.jpg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    3. Analysing their letters and delivering them to the right recipients.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12"></br></br></br></br>
-                    <div class="w3-container" style="padding-left:200px;">
-                        <div class="w3-card-4" style="width:340px;height:320px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\5.jpeg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    4. Creating awareness about the most expressed concerns of children.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12"></br></br></br></br>
-                    <div class="w3-container" style="padding-left: 230px;">
-                        <div class="w3-card-4" style="width:340px;height:320px;background-color:white;border-radius:30px;">
-            
-                            <img src="images\growing-sunflowers.jpg" alt="5.jpeg" style="width:340px;height:210px;border-radius:20px;">
-                            <div class="w3-container w3-center">
-                                <p style="font-family:'blog'">
-                                    5. Posting and publishing a few letters on social media, in a small book every year.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="full news_blog">
-                       <img class="img-responsive" src="images/b1.png" alt="#" />
-                       <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                       <div class="blog_details">
-                         <h3>Bitcoin News</h3>
-                         <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                       </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="full news_blog">
-                        <img class="img-responsive" src="images/b2.png" alt="#" />
-                        <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                       <div class="blog_details">
-                         <h3>Ethereum News</h3>
-                         <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                       </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="full news_blog">
-                        <img class="img-responsive" src="images/b3.png" alt="#" />
-                        <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                       <div class="blog_details">
-                         <h3>Light News</h3>
-                         <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                       </div>
-                    </div>
-                </div>-->
-             </div>
         </div>
-    </div>
-    <!-- end section -->
-   
-
-    <div class="section layout_padding" style="background:url('images/Buterflies.png');background-size:110% 90%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <div class="heading_main text_align_center">
-                           <h3 style="font-family:'cheer';color:#994276;font-size:30pt;"><span class="theme_color"></span>Write to us</h3>    
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                   <img class="img-responsive" src="images/Work3.jpeg" alt="#" style="opacity: 0.8;"/>
-                   <div class="imagetext" style="left:8%;">
-                       Write a letter about an issue that you care about.
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/Work2.jpeg" alt="#" style="opacity:0.8"/>
-                    <div class="imagetext" style="left:14%;">
-                        Click a picture of the letter and send it to us.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/Work1.jpeg" alt="#" style="opacity:0.8" />
-                    <div class="imagetext" style="left:3%;">
-                        Search for your letter on this website, we have uploaded it!
-                    </div>
-                </div>
-            </div>
-         </div>
     </div>
 </div>
+<!-- End Banner -->
+    
+   <!-- End Banner -->
+<div class="footer_bottom" style="background:white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start Banner -->
+
+    
+
+<!-- Start Banner --><div align="center"><button id="partnerbutt">Upload the Letter</button></div>
+
+<div class="section inner_page_banner" style="width:80%;margin-left:10%;padding-bottom:40px;background:rgb(211, 238, 243);border-radius: 30px;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner_title" align="center">
+                    
+                     <form action="" method="post" align="center" id="partnerform">
+                         
+                         <input type="email" name="email" placeholder="Email ID"></br></br>
+                         <input type="number" name="phone" placeholder="Phone Number"></br></br>
+                         <input type="file" name="letter" placeholder="Upload Letter" id="CV" style="display:none;">
+                         <label for="letter">Upload Letter<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Ic_attach_file_48px.svg/768px-Ic_attach_file_48px.svg.png" height="30px" width="30px"></label></br></br>
+                         <button type="submit" id="submit">Submit</button>
+                     </form>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Banner -->
 
 
   <!-- section -->
@@ -359,7 +242,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="full"></br><hr width="100%" style="background:#ffbf0e;height:3px;">
+                <div class="full"><hr width="100%" style="background:#ffbf0e;height:3px;">
                     <div class="heading_main text_align_center">
                         
                        <h4 style="font-family:'cheer';color:#994276;padding-left:44%;">Follow us on</h4>
@@ -382,6 +265,7 @@
         </div>
     </div>
   </div>
+
   <!-- end section -->
 
 
