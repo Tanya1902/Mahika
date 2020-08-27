@@ -56,6 +56,9 @@
             font-family: happy;
             src: url('fonts/My Happy Ending - TTF.ttf');
         }
+        ::placeholder{
+            color:#000000;
+        }
         
 </style>
 
@@ -75,7 +78,7 @@
     <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
-            <img src="images/Logo.png" style="height:150px;width:100px;top:-5px;z-index:16;position:absolute;">
+            <a href="index.html"><img src="images/Logo.png" style="height:150px;width:100px;top:-5px;z-index:16;position:absolute;"></a>
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
@@ -85,7 +88,7 @@
                         <ul>
                             <!--<li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
                             <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+7123569847</a></li>-->
-                            <li><a class="join_bt" href="GetInvolved.html">Donate</a></li>
+                            <li><a class="join_bt" href="Donate.html">Donate</a></li>
                             <li><a class="join_bt" href="WriteLetter.html">Write a Letter</a></li>
                         </ul>
                     </div>
@@ -199,12 +202,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="banner_title">
-                    <h3 style="font-family:'cheer';color:#994276;font-size:25pt">Send through Website</h3>
-                    <p style="font-family:'blog';font-size:20pt;color:#000000;padding-left:20px;">
-                    Login to Upload a letter</br></br>
-                
-                    <input type="radio" name="google"> Google
-                    <input type="radio" name="google"> Facebook
+                    <h3 style="font-family:'cheer';color:#994276;font-size:25pt">Send through Post</h3>
+                    <p style="font-family:'blog';font-size:20pt;color:#000000;padding-left:20px;font-weight:700;">
+                    Address</br>
+                    <p style="font-family:'blog';font-size:18pt;color:#000000;padding-left:20px;">PO Box 9075 Goregaon(E) PO, Mumbai - 400063 INDIA</p>
                     </p>
                 </div>
             </div>
@@ -270,7 +271,7 @@
                                 <ul class="menu_footer">
                                     <li><a href="WorkFlow.html">> WorkFlow</a></li>
                                     <li><a href="LettersforChange.html">> Letters for Change</a></li>
-                                    <li><a href="BringingChange.html">> Bringing Change</a></li>
+                                    <li><a href="ImpactfulLetters.html">> Impactful Letters</a></li>
 
                                 </ul>
                             </div>
@@ -324,6 +325,7 @@
                                             <input type="text" placeholder="Name" name="name" required="">
                                             <input type="number" placeholder="Contact" name="contact" required="">
                                             <input type="email" placeholder="error@mail.com" name="email" required="">
+                                            <input type="text" placeholder="Message" name="mssg" required="">
                                             <button>Send</button>
                                         </form>
                                     </div>

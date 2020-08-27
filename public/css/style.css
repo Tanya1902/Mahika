@@ -513,9 +513,10 @@ a.navbar-brand {
 }
 
 .navbar-toggler {
-    border: 2px solid #fff;
+    border: 2px solid #000000;
     border-radius: 0;
-    margin: 15px 0;
+	margin: 15px 0px;
+	
     padding: 8px 8px;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -526,7 +527,7 @@ a.navbar-brand {
 }
 
 .navbar-toggler span {
-	background: #fff;
+	background: #000000;
 	display: block;
 	width: 22px;
 	height: 2px;
@@ -540,6 +541,7 @@ a.navbar-brand {
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
+	
 }
 
 .navbar-toggler span+span {
